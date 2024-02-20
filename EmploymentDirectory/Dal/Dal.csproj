@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="DalApi\" />
     <Folder Include="DalImplementation\" />
-    <Folder Include="DataObjects\" />
   </ItemGroup>
 
   <ItemGroup>
