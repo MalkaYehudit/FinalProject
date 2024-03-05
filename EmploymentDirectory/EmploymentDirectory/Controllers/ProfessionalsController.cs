@@ -17,7 +17,16 @@ namespace EmploymentDirectory.Controllers
         [HttpGet]
         public ActionResult<List<Professional>> GetProfessionals()
         {
+
             return professionalRepo.GetAllProfessionals();
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Professional> GetProfessionalById(int id)
+        {
+            return professionalRepo.GetProfessionalById(id);
+        }
+
+
     }
 }

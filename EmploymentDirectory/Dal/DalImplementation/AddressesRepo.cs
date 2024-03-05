@@ -15,6 +15,18 @@ namespace Dal.DalImplementation
         {
             this.context = context;
         }
+
+        public List<Address> GetAllAddresses()
+        {
+            return context.Addresses.ToList();
+
+        }
+
+        public Address GetAddressById(int id)
+        {
+            return context.Addresses.FirstOrDefault(a => a.Id == id);
+        }
+
         public Address AddNewCity(Address city)
         {
             context.Addresses.Add(city);
@@ -22,15 +34,26 @@ namespace Dal.DalImplementation
             return city;
         }
 
-        public Address UpdateCity(int id, Address city)
+        public Address UpdateCity(int id, string city)
         {
             Address a = context.Addresses.FirstOrDefault(x => x.Id == id);
             if (a != null)
             {
-                a.City = city.City;
+                a.City = city;
             }
             context.SaveChanges();
             return a;
+        }
+
+        public Address DeleteCity(int id)
+        {
+            Address address = context.Addresses.FirstOrDefault(a => a.Id == id);
+            if (address != null)
+            {
+                context.Addresses.Remove(address);
+            }
+            context.SaveChanges();
+            return address;
         }
     }
 }

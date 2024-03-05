@@ -9,6 +9,9 @@ namespace Dal.DalApi;
 
 public interface IProfessionalRepo
 {
-     List<Professional> GetAllProfessionals();
-
+    List<Professional> GetAllProfessionals();
+    Professional GetProfessionalById(int id);
+    Professional AddNewProfessional(Professional professional);
+    Professional UpdateProfessional(int id,  Professional professional);
+    Professional DeleteProfessional(int id);
 }

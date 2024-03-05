@@ -15,8 +15,42 @@ public class ProfessionalRepo : IProfessionalRepo
     {
         this.context = context;
     }
+
     public List<Professional> GetAllProfessionals()
     {
         return context.Professionals.ToList();
+    }
+
+    public Professional GetProfessionalById(int id)
+    {
+        return context.Professionals.FirstOrDefault(p => p.Id == id);
+    }
+
+    public Professional AddNewProfessional(Professional professional)
+    {
+        context.Professionals.Add(professional);
+        context.SaveChanges();
+        return professional;
+    }
+
+    public Professional UpdateProfessional(int id, Professional professional)
+    {
+        Professional p = context.Professionals.FirstOrDefault(p => p.Id == id);
+        if (p != null)
+        {
+            p.Professionals = professional.Professionals;
+        }
+        context.SaveChanges();
+        return p;
+    }
+    public Professional DeleteProfessional(int id)
+    {
+        Professional professional = context.Professionals.FirstOrDefault(p => p.Id == id);
+        if (professional != null)
+        {
+            context.Professionals.Remove(professional);
+        }
+        context.SaveChanges();
+        return professional;
     }
 }

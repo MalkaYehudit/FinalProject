@@ -16,4 +16,6 @@ public partial class Client
     public string PhoneNumber { get; set; }
 
     public string EmailAddress { get; set; }
+
+    public virtual Address Address { get; set; }
 }

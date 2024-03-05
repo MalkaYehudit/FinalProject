@@ -9,6 +9,9 @@ namespace Dal.DalApi;
 
 public interface IBussinesDetailsRepo
 {
+    List<BussinesDetail> GetAllBussinesDetails();
+    BussinesDetail GetBussinesDetailsById(int id);
     BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail);
     BussinesDetail UpdateBussinesDetails(int id,  BussinesDetail bussinesDetail);
+    BussinesDetail DeleteBussinesDetails(int id);
 }

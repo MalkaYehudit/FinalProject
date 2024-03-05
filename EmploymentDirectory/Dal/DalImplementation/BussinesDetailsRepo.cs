@@ -15,6 +15,18 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
     {
         this.context = context;
     }
+
+    public List<BussinesDetail> GetAllBussinesDetails()
+    {
+        return context.BussinesDetails.ToList();
+
+    }
+
+    public BussinesDetail GetBussinesDetailsById(int id)
+    {
+        return context.BussinesDetails.FirstOrDefault(b => b.Id == id);
+    }
+
     public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
     {
         context.BussinesDetails.Add(bussinesDetail);
@@ -33,7 +45,17 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
             b.CityId = bussinesDetail.CityId;
             b.PriceRange = bussinesDetail.PriceRange;
         }
+        context.SaveChanges();
+        return b;
+    }
 
+    public BussinesDetail DeleteBussinesDetails(int id)
+    {
+        BussinesDetail bussinesDetail = context.BussinesDetails.FirstOrDefault(b => b.Id == id);
+        if(bussinesDetail != null)
+        {
+            context.BussinesDetails.Remove(bussinesDetail);
+        }
         context.SaveChanges();
         return bussinesDetail;
     }

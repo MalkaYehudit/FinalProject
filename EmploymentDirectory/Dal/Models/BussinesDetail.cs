@@ -16,4 +16,10 @@ public partial class BussinesDetail
     public int CityId { get; set; }
 
     public string PriceRange { get; set; }
+
+    public virtual Address City { get; set; }
+
+    public virtual ICollection<Employer> Employers { get; set; } = new List<Employer>();
+
+    public virtual Professional Profession { get; set; }
 }
