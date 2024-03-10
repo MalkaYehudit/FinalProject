@@ -1,5 +1,6 @@
 ﻿using Dal.DalApi;
 using Dal.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,8 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public BussinesDetail GetBussinesDetailsById(int id)
     {
-        return context.BussinesDetails.FirstOrDefault(b => b.Id == id);
+        //return context.BussinesDetails.FirstOrDefault(b => b.Id == id);
+        return context.BussinesDetails.Where(b => b.Id == id).Include(b => b.CityId).FirstOrDefault();
     }
 
     public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)

@@ -126,7 +126,7 @@ public partial class LibraryContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PK__Professi__3214EC07C9F8D53D");
 
-            entity.Property(e => e.Professional1)
+            entity.Property(e => e.Professionals)
                 .IsRequired()
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS")
