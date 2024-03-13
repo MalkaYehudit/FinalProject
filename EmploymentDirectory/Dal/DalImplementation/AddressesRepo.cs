@@ -26,34 +26,5 @@ namespace Dal.DalImplementation
         {
             return context.Addresses.FirstOrDefault(a => a.Id == id);
         }
-
-        public Address AddNewCity(Address city)
-        {
-            context.Addresses.Add(city);
-            context.SaveChanges();
-            return city;
-        }
-
-        public Address UpdateCity(int id, string city)
-        {
-            Address a = context.Addresses.FirstOrDefault(x => x.Id == id);
-            if (a != null)
-            {
-                a.City = city;
-            }
-            context.SaveChanges();
-            return a;
-        }
-
-        public Address DeleteCity(int id)
-        {
-            Address address = context.Addresses.FirstOrDefault(a => a.Id == id);
-            if (address != null)
-            {
-                context.Addresses.Remove(address);
-            }
-            context.SaveChanges();
-            return address;
-        }
     }
 }

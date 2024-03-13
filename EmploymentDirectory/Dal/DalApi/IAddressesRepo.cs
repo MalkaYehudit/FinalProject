@@ -11,7 +11,4 @@ public interface IAddressesRepo
 {
     List<Address> GetAllAddresses();
     Address GetAddressById(int id);
-    Address AddNewCity(Address city);
-    Address UpdateCity(int id, string city);
-    Address DeleteCity(int id);
 }

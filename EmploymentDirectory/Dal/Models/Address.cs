@@ -11,7 +11,5 @@ public partial class Address
 
     public virtual ICollection<BussinesDetail> BussinesDetails { get; set; } = new List<BussinesDetail>();
 
-    public virtual ICollection<Client> Clients { get; set; } = new List<Client>();
-
     public virtual ICollection<Employer> Employers { get; set; } = new List<Employer>();
 }

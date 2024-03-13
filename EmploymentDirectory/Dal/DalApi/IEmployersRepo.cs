@@ -10,8 +10,8 @@ namespace Dal.DalApi;
 public interface IEmployersRepo
 {
     List<Employer> GetAllEmployers();
-    Employer GetEmployerById(int id);
-    Employer AddNewEmployer(Employer employer);
-    Employer UpdateEmployer(int id, Employer employer);
-    Employer DeleteEmployer(int id);
+    //Employer GetEmployerById(int id);
+    //Employer AddNewEmployer(Employer employer);
+    //Employer UpdateEmployer(int id, Employer employer);
+    //Employer DeleteEmployer(int id);
 }

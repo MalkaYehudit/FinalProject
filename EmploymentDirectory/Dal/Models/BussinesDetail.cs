@@ -7,8 +7,6 @@ public partial class BussinesDetail
 {
     public int Id { get; set; }
 
-    public int ProfessionId { get; set; }
-
     public string BusinessName { get; set; }
 
     public int Experience { get; set; }
@@ -17,9 +15,9 @@ public partial class BussinesDetail
 
     public string PriceRange { get; set; }
 
+    public int ProfessionalId { get; set; }
+
     public virtual Address City { get; set; }
 
-    public virtual ICollection<Employer> Employers { get; set; } = new List<Employer>();
-
-    public virtual Professional Profession { get; set; }
+    public virtual Professional Professional { get; set; }
 }

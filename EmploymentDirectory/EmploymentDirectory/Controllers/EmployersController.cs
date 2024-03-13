@@ -21,29 +21,29 @@ namespace EmploymentDirectory.Controllers
         {
             return employersRepo.GetAllEmployers();
         }
-        [HttpGet("{id}")]
-        public ActionResult<Employer> GetEmployer(int id)
-        {
-            return employersRepo.GetEmployerById(id);
-        }
-        [HttpPost]
-        public Employer PostNewEmployer(Employer employer)
-        {
-            Employer employers = employersRepo.AddNewEmployer(employer);
-            return employers;
-        }
+        //[HttpGet("{id}")]
+        //public ActionResult<Employer> GetEmployer(int id)
+        //{
+        //    return employersRepo.GetEmployerById(id);
+        //}
+        //[HttpPost]
+        //public Employer PostNewEmployer(Employer employer)
+        //{
+        //    Employer employers = employersRepo.AddNewEmployer(employer);
+        //    return employers;
+        //}
 
-        [HttpPut("{id}")]
-        public Employer PutEmployer(int id, [FromForm] Employer employer)
-        {
-            return employersRepo.UpdateEmployer(id, employer);
-        }
+        //[HttpPut("{id}")]
+        //public Employer PutEmployer(int id, [FromForm] Employer employer)
+        //{
+        //    return employersRepo.UpdateEmployer(id, employer);
+        //}
 
-        [HttpDelete("{id}")]
-        public Employer DeleteEmployer(int id)
-        {
-            return employersRepo.DeleteEmployer(id);
-        }
+        //[HttpDelete("{id}")]
+        //public Employer DeleteEmployer(int id)
+        //{
+        //    return employersRepo.DeleteEmployer(id);
+        //}
     }
 }
 

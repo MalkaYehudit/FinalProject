@@ -13,9 +13,9 @@ public partial class Employer
 
     public int AddressId { get; set; }
 
-    public int BussinesDetailsId { get; set; }
+    public int ProfessionalId { get; set; }
 
     public virtual Address Address { get; set; }
 
-    public virtual BussinesDetail BussinesDetails { get; set; }
+    public virtual Professional Professional { get; set; }
 }

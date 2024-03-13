@@ -26,23 +26,5 @@ namespace EmploymentDirectory.Controllers
         {
             return addressesRepo.GetAddressById(id);
         }
-        [HttpPost]
-        public Address PostNewAddress(Address city)
-        {
-            Address address = addressesRepo.AddNewCity(city);
-            return address;
-        }
-
-        [HttpPut("{id}")]
-        public Address PutAddress(int id, [FromForm]string city)
-        {
-            return addressesRepo.UpdateCity(id, city);    
-        }
-
-        [HttpDelete("{id}")]
-        public Address DeleteAddress(int id)
-        {
-            return addressesRepo.DeleteCity(id);
-        }
     }
 }

@@ -19,8 +19,6 @@ public partial class LibraryContext : DbContext
 
     public virtual DbSet<BussinesDetail> BussinesDetails { get; set; }
 
-    public virtual DbSet<Client> Clients { get; set; }
-
     public virtual DbSet<Employer> Employers { get; set; }
 
     public virtual DbSet<Professional> Professionals { get; set; }
@@ -43,7 +41,7 @@ public partial class LibraryContext : DbContext
 
         modelBuilder.Entity<BussinesDetail>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07C1139495");
+            entity.HasKey(e => e.Id).HasName("PK__Bussines__3214EC07DD6DE2FB");
 
             entity.Property(e => e.BusinessName)
                 .IsRequired()
@@ -54,54 +52,25 @@ public partial class LibraryContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+            entity.Property(e => e.ProfessionalId).HasColumnName("ProfessionalID");
 
             entity.HasOne(d => d.City).WithMany(p => p.BussinesDetails)
                 .HasForeignKey(d => d.CityId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_BussinesDetails_ToAddresses");
 
-            entity.HasOne(d => d.Profession).WithMany(p => p.BussinesDetails)
-                .HasForeignKey(d => d.ProfessionId)
+            entity.HasOne(d => d.Professional).WithMany(p => p.BussinesDetails)
+                .HasForeignKey(d => d.ProfessionalId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_BussinesDetails_ToProfessionals");
         });
 
-        modelBuilder.Entity<Client>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__Clients__3214EC07AF9957B2");
-
-            entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.EmailAddress)
-                .IsRequired()
-                .HasMaxLength(50)
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
-            entity.Property(e => e.FirstName)
-                .IsRequired()
-                .HasMaxLength(50)
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
-            entity.Property(e => e.LastName)
-                .IsRequired()
-                .HasMaxLength(50)
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
-            entity.Property(e => e.PhoneNumber)
-                .IsRequired()
-                .HasMaxLength(10)
-                .IsFixedLength()
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
-
-            entity.HasOne(d => d.Address).WithMany(p => p.Clients)
-                .HasForeignKey(d => d.AddressId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Clients_ToAddresses");
-        });
-
         modelBuilder.Entity<Employer>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Employer__3214EC0749400950");
+            entity.HasKey(e => e.Id).HasName("PK__Employer__3214EC0722E42C41");
 
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.AddressId).HasColumnName("AddressID");
-            entity.Property(e => e.BussinesDetailsId).HasColumnName("BussinesDetailsID");
             entity.Property(e => e.FirstName)
                 .IsRequired()
                 .HasMaxLength(50)
@@ -110,27 +79,25 @@ public partial class LibraryContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+            entity.Property(e => e.ProfessionalId).HasColumnName("ProfessionalID");
 
             entity.HasOne(d => d.Address).WithMany(p => p.Employers)
                 .HasForeignKey(d => d.AddressId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Employers_ToAddresses");
 
-            entity.HasOne(d => d.BussinesDetails).WithMany(p => p.Employers)
-                .HasForeignKey(d => d.BussinesDetailsId)
+            entity.HasOne(d => d.Professional).WithMany(p => p.Employers)
+                .HasForeignKey(d => d.ProfessionalId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Employers_ToBussinesDetails");
+                .HasConstraintName("FK_Employers_ToProfessionals");
         });
 
         modelBuilder.Entity<Professional>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Professi__3214EC07C9F8D53D");
+            entity.HasKey(e => e.Id).HasName("PK__Professi__3214EC07E3231F7C");
 
-            entity.Property(e => e.Professionals)
-                .IsRequired()
-                .HasMaxLength(50)
-                .UseCollation("SQL_Latin1_General_CP1_CI_AS")
-                .HasColumnName("Professional");
+            entity.Property(e => e.BussinesDetailsId).HasColumnName("BussinesDetailsID");
+            entity.Property(e => e.EmployersId).HasColumnName("EmployersID");
         });
 
         OnModelCreatingPartial(modelBuilder);

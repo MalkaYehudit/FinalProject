@@ -23,40 +23,40 @@ public class EmployersRepo : IEmployersRepo
 
     }
 
-    public Employer GetEmployerById(int id)
-    {
-        return context.Employers.FirstOrDefault(e => e.Id == id);
-    }
+    //public Employer GetEmployerById(int id)
+    //{
+    //    return context.Employers.FirstOrDefault(e => e.Id == id);
+    //}
 
-    public Employer AddNewEmployer(Employer employer)
-    {
-        context.Employers.Add(employer);
-        context.SaveChanges();
-        return employer;
-    }
+    //public Employer AddNewEmployer(Employer employer)
+    //{
+    //    context.Employers.Add(employer);
+    //    context.SaveChanges();
+    //    return employer;
+    //}
 
-    public Employer UpdateEmployer(int id, Employer employer)
-    {
-        Employer e = context.Employers.FirstOrDefault(x => x.Id == id);
-        if (e != null)
-        {
-            e.FirstName = employer.FirstName;
-            e.LastName = employer.LastName;
-            e.AddressId = employer.AddressId;
-            e.BussinesDetailsId = employer.BussinesDetailsId;
-        }
-        context.SaveChanges();
-        return e;
-    }
+    //public Employer UpdateEmployer(int id, Employer employer)
+    //{
+    //    Employer e = context.Employers.FirstOrDefault(x => x.Id == id);
+    //    if (e != null)
+    //    {
+    //        e.FirstName = employer.FirstName;
+    //        e.LastName = employer.LastName;
+    //        e.AddressId = employer.AddressId;
+    //        e.BussinesDetailsId = employer.BussinesDetailsId;
+    //    }
+    //    context.SaveChanges();
+    //    return e;
+    //}
 
-    public Employer DeleteEmployer(int id)
-    {
-        Employer employer = context.Employers.FirstOrDefault(e => e.Id == id);
-        if (employer != null)
-        {
-            context.Employers.Remove(employer);
-        }
-        context.SaveChanges();
-        return employer;
-    }
+    //public Employer DeleteEmployer(int id)
+    //{
+    //    Employer employer = context.Employers.FirstOrDefault(e => e.Id == id);
+    //    if (employer != null)
+    //    {
+    //        context.Employers.Remove(employer);
+    //    }
+    //    context.SaveChanges();
+    //    return employer;
+    //}
 }
