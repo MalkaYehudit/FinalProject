@@ -17,15 +17,20 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
         this.context = context;
     }
 
-    public async Task<List<BussinesDetail>> GetAllBussinesDetailsAsync()
+    public List<BussinesDetail> GetAllBussinesDetails()
     {
-        return await context.BussinesDetails.Include(a=>a.AccountId).ToListAsync();
+        return context.BussinesDetails.Include(a => a.AccountId).ToList();
     }
 
-    //public async Task<BussinesDetail> GetBussinesDetailsByIdAsync(int id)
-    //{
-    //    //return await context.BussinesDetails.Where(b => b.Id == id).Include(b => b.CityId).Include(b => b.ProfessionalId).ThenInclude().FirstOrDefaultAsync();
-    //}
+    public BussinesDetail GetBussinesDetailsById(int id)
+    {
+        return  context.BussinesDetails.Where(b => b.Id == id).Include(b => b.AddressId).Include(b => b.ProfessionId).Include(a=>a.AccountId).FirstOrDefault();
+    }
+
+
+
+
+
 
     //public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
     //{
