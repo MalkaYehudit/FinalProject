@@ -19,15 +19,15 @@ namespace EmploymentDirectory.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<BussinesDetail>> GetAllBussineses() 
+        public async Task<ActionResult<List<BussinesDetail>>> GetAllBussineses() 
         {
-            return bussinesDetailsRepo.GetAllBussinesDetails();
+            return await bussinesDetailsRepo.GetAllBussinesDetailsAsync();
         }
 
         //[HttpGet("{id}")]
-        //public ActionResult<BussinesDetail> GetBussinesDetails(int id)
+        //public async Task<ActionResult<BussinesDetail>> GetBussinesDetails(int id)
         //{
-        //    return bussinesDetailsRepo.GetBussinesDetailsById(id);
+        //    return await bussinesDetailsRepo.GetBussinesDetailsByIdAsync(id);
         //}
 
         //[HttpPost]

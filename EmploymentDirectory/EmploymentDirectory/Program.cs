@@ -13,7 +13,6 @@ builder.Services.AddDbContext<LibraryContext>(opt => opt.UseSqlServer(connString
 
 builder.Services.AddScoped<IAddressesRepo, AddressesRepo>();
 builder.Services.AddScoped<IBussinesDetailsRepo, BussinesDetailsRepo>();
-builder.Services.AddScoped<IEmployersRepo, EmployersRepo>();
 
 var app = builder.Build();
 

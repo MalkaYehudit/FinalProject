@@ -1,0 +1,31 @@
+CREATE TABLE [dbo].[BussinesDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1, 1), 
+    [FirstName] NVARCHAR(50) NOT NULL, 
+    [LastName] NVARCHAR(50) NOT NULL, 
+    [ProfessionID] INT NOT NULL, 
+    [BussinesName] NVARCHAR(50) NOT NULL, 
+    [Experience] INT NOT NULL, 
+    [PriceRange] NVARCHAR(50) NOT NULL, 
+    [AddressID] INT NOT NULL, 
+    CONSTRAINT [FK_BussinesDetails_ToProfession] FOREIGN KEY ([Column]) REFERENCES [ToTable]([ToTableColumn])
+)
+
+
+
+CREATE TABLE [dbo].[BussinesDetails] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL,
+    [FirstName]    NVARCHAR (50) NOT NULL,
+    [LastName]     NVARCHAR (50) NOT NULL,
+    [ProfessionID] INT           NOT NULL,
+    [BussinesName] NVARCHAR (50) NOT NULL,
+    [Experience]   INT           NOT NULL,
+    [PriceRange]   NVARCHAR (50) NOT NULL,
+    [AddressID]    INT           NOT NULL,
+    [AccountID] NVARCHAR(50) NOT NULL, 
+    PRIMARY KEY CLUSTERED ([Id] ASC),
+    CONSTRAINT [FK_BussinesDetails_ToProfession] FOREIGN KEY ([ProfessionID]) REFERENCES [dbo].[Professions] ([Id]), 
+    CONSTRAINT [FK_BussinesDetails_ToAddresses] FOREIGN KEY ([AddressID]) REFERENCES [Addresses]([Id]),
+	CONSTRAINT [FK_BussinesDetails_ToAccounts] FOREIGN KEY ([AccountID]) REFERENCES [Accounts]([Password])
+);
+

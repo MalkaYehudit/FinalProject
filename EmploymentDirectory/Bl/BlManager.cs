@@ -8,5 +8,5 @@ namespace Bl;
 
 public class BlManager
 {
-    public int MyProperty { get; set; }
+    
 }
