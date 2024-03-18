@@ -19,7 +19,7 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public async Task<List<BussinesDetail>> GetAllBussinesDetailsAsync()
     {
-        return await context.BussinesDetails.Include(a=>a.AccountId).ToListAsync();
+        return await context.BussinesDetails.Include(p=>p.ProfessionId).Include(a=>a.AddressId).Include(ac=>ac.AccountId).ToListAsync();
     }
 
     //public async Task<BussinesDetail> GetBussinesDetailsByIdAsync(int id)
