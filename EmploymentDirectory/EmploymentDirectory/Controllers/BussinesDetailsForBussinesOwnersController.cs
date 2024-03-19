@@ -1,4 +1,5 @@
-﻿using Bl.BlApi;
+﻿using Bl;
+using Bl.BlApi;
 using Bl.BlImplementation;
 using Bl.BlObjects;
 using Dal.DalApi;
@@ -13,9 +14,9 @@ namespace EmploymentDirectory.Controllers
     public class BussinesDetailsForBussinesOwnersController : ControllerBase
     {
         IBussinesDetailsRepoForBusinessOwner _bussinesDetailsRepoForBusinessOwner;
-        public BussinesDetailsForBussinesOwnersController(IBussinesDetailsRepoForBusinessOwner bussinesDetailsRepoForBusinessOwner, LibraryContext libraryContext)
+        public BussinesDetailsForBussinesOwnersController(BlManager blManager)
         {
-            _bussinesDetailsRepoForBusinessOwner = bussinesDetailsRepoForBusinessOwner;
+            _bussinesDetailsRepoForBusinessOwner = blManager.BussinesDetailsRepoForBussinesOwner;
         }
         [HttpGet]
         public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner()

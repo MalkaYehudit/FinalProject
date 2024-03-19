@@ -13,16 +13,16 @@ namespace Bl.BlImplementation;
 
 public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusinessOwner
 {
-    Account account;
+    //Account account;
     AddressesRepo addressesRepo;
     BussinesDetailsRepo bussinesDetailsRepo;
-    Profession profession;
+    //Profession profession;
     public BussinesDetailsRepoForBussinesOwner(DalManager dalManager)
     {
-        this.account = dalManager.account;
+        //this.account = dalManager.account;
         this.addressesRepo = dalManager.addresses;
         this.bussinesDetailsRepo = dalManager.bussinesDetails;
-        this.profession = dalManager.profession;
+        //this.profession = dalManager.profession;
     }
     public List<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsForBusinessOwners()
     {

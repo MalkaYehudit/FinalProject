@@ -20,7 +20,7 @@ public class BussinesDetailsRepoForClient : IBussinesDetailsRepoForClient
     {
         this.addressesRepo = dalManager.addresses;
         this.bussinesDetailsRepo = dalManager.bussinesDetails;
-        this.profession = dalManager.profession;
+        //this.profession = dalManager.profession;
     }
     public List<BussinesDetailsForClient> GetAllBusinessDetailsForClients()
     {

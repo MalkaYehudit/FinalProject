@@ -19,12 +19,15 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public List<BussinesDetail> GetAllBussinesDetails()
     {
-        return context.BussinesDetails.Include(b => b.AddressId).Include(b => b.ProfessionId).Include(a => a.AccountId).ToList();
+        
+        return context.BussinesDetails./*Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a => a.AccountId).*/ToList();
     }
 
     public BussinesDetail GetBussinesDetailsById(int id)
     {
-        return  context.BussinesDetails.Where(b => b.Id == id).Include(b => b.AddressId).Include(b => b.ProfessionId).Include(a=>a.AccountId).FirstOrDefault();
+        var item = context.BussinesDetails.Where(b => b.Id == id)
+            .Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a=>a.AccountId).FirstOrDefault();
+        return item; 
     }
 
 
