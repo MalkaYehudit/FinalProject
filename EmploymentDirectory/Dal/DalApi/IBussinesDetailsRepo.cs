@@ -9,8 +9,8 @@ namespace Dal.DalApi;
 
 public interface IBussinesDetailsRepo
 {
-    Task<List<BussinesDetail>> GetAllBussinesDetailsAsync();
-    //Task<BussinesDetail> GetBussinesDetailsByIdAsync(int id);
+    List<BussinesDetail> GetAllBussinesDetails();
+    BussinesDetail GetBussinesDetailsById(int id);
     //BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail);
     //BussinesDetail UpdateBussinesDetails(int id,  BussinesDetail bussinesDetail);
     //BussinesDetail DeleteBussinesDetails(int id);

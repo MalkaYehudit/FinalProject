@@ -1,4 +1,5 @@
-﻿using Dal.DalApi;
+﻿using Bl.BlApi;
+using Dal.DalApi;
 using Dal.DalImplementation;
 using Dal.Models;
 using Microsoft.AspNetCore.Http;
@@ -10,7 +11,8 @@ namespace EmploymentDirectory.Controllers
     [ApiController]
     public class BussinesDetailsController : ControllerBase
     {
-        IBussinesDetailsRepo bussinesDetailsRepo;
+        IBussinesDetailsRepoForBusinessOwner bussinesDetailsRepoForBusinessOwner;
+
         LibraryContext libraryContext;
         public BussinesDetailsController(IBussinesDetailsRepo bussinesDetailsRepo, LibraryContext libraryContext)
         {
@@ -21,7 +23,7 @@ namespace EmploymentDirectory.Controllers
         [HttpGet]
         public async Task<ActionResult<List<BussinesDetail>>> GetAllBussineses() 
         {
-            return await bussinesDetailsRepo.GetAllBussinesDetailsAsync();
+            return  bussinesDetailsRepo.GetAllBussinesDetails();
         }
 
         //[HttpGet("{id}")]

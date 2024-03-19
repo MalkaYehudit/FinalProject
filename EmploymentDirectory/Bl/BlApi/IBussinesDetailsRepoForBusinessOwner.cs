@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Bl.BlObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bl.BlApi
+namespace Bl.BlApi;
+
+public interface IBussinesDetailsRepoForBusinessOwner
 {
-    internal class BussinesDetailsRepoForBusinessOwner
-    {
-    }
+    List<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsForBusinessOwners();
+    BussinesDetailsForBusinessOwner GetBussinesDetailsForBusinessOwnerById(int id);
 }
