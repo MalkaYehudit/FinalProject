@@ -7,22 +7,27 @@ using System.Text;
 using System.Threading.Tasks;
 using Dal;
 using Microsoft.Extensions.DependencyInjection;
+using Bl.BlImplementation;
+
 
 namespace Bl;
 
 public class BlManager
 {
-    public BusinessDetailsRepoForCliant BusinessDetailsForCliant { get;  }
+    public BussinesDetailsRepoForClient BussinesDetailsRepoForClient { get;  }
+    public BussinesDetailsRepoForBussinesOwner BussinesDetailsRepoForBussinesOwner { get; }
 
-
-    public BlManager(object constr) {
+    public BlManager() {
         ServiceCollection services = new();
-        services.AddSingleton<DalManager>(d => new DalManager(constr));
-        services.AddScoped<BusinessDetailsRepoForCliant>();
+        services.AddScoped<DalManager>();
+        services.AddScoped<BussinesDetailsRepoForClient>();
+        services.AddScoped<BussinesDetailsRepoForBussinesOwner>();
 
         ServiceProvider servicesProvider = services.BuildServiceProvider();
 
-        BusinessDetailsForCliant = servicesProvider.GetService<BusinessDetailsRepoForCliant>();
+        //BussinesDetailsRepoForClient = servicesProvider.GetService<BussinesDetailsRepoForClient>();
+        BussinesDetailsRepoForBussinesOwner = servicesProvider.GetService<BussinesDetailsRepoForBussinesOwner>();
+
 
     
     }
