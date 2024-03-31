@@ -9,6 +9,7 @@ using Dal;
 using Microsoft.Extensions.DependencyInjection;
 using Bl.BlImplementation;
 
+
 namespace Bl;
 
 public class BlManager
@@ -26,6 +27,8 @@ public class BlManager
 
         //BussinesDetailsRepoForClient = servicesProvider.GetService<BussinesDetailsRepoForClient>();
         BussinesDetailsRepoForBussinesOwner = servicesProvider.GetService<BussinesDetailsRepoForBussinesOwner>();
+
+
     
     }
 

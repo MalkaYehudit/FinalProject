@@ -17,9 +17,10 @@ public class DalManager
     public BussinesDetailsRepo bussinesDetails { get; }
     //public Profession profession { get; }
     //public Account account { get; }
+
     
 
-    public DalManager() 
+    public DalManager(object constr) 
     { 
         ServiceCollection services = new();
         services.AddScoped<LibraryContext>();
@@ -34,5 +35,6 @@ public class DalManager
         bussinesDetails = (BussinesDetailsRepo)serviceProvider.GetRequiredService<IBussinesDetailsRepo>();
         //profession = serviceProvider.GetRequiredService<Profession>();
         //account = serviceProvider.GetRequiredService<Account>();
+
     }
 }
