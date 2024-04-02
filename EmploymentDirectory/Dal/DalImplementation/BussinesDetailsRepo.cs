@@ -25,10 +25,8 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public BussinesDetail GetBussinesDetailsById(int id)
     {
-        var item = context.BussinesDetails.Where(b => b.Id == id)
-            .Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a=>a.AccountId).FirstOrDefault();
-        return item; 
-
+        return context.BussinesDetails.Where(b => b.Id == id)
+            /*.Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a=>a.AccountId)*/.FirstOrDefault();
     }
 
 
