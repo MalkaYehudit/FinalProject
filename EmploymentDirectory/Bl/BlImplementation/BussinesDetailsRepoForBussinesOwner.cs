@@ -14,13 +14,13 @@ namespace Bl.BlImplementation;
 public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusinessOwner
 {
     //Account account;
-    AddressesRepo addressesRepo;
+    //AddressesRepo addressesRepo;
     BussinesDetailsRepo bussinesDetailsRepo;
     //Profession profession;
     public BussinesDetailsRepoForBussinesOwner(DalManager dalManager)
     {
         //this.account = dalManager.account;
-        this.addressesRepo = dalManager.addresses;
+        //this.addressesRepo = dalManager.addresses;
         this.bussinesDetailsRepo = dalManager.bussinesDetails;
         //this.profession = dalManager.profession;
     }
@@ -48,18 +48,78 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
 
     public BussinesDetailsForBusinessOwner GetBussinesDetailsForBusinessOwnerById(int id)
     {
-        BussinesDetail details = bussinesDetailsRepo.GetBussinesDetailsById(id);
+        BussinesDetail getdetails = bussinesDetailsRepo.GetBussinesDetailsById(id);
         return new BussinesDetailsForBusinessOwner()
         {
-            Id = details.Id,
-            FirstName = details.FirstName,
-            LastName = details.LastName,
-            ProfessionId = details.ProfessionId,
-            BussinesName = details.BussinesName,
-            Experience = details.Experience,
-            PriceRange = details.PriceRange,
-            AddressId = details.AddressId,
-            AccountId = details.AccountId
+            Id = getdetails.Id,
+            FirstName = getdetails.FirstName,
+            LastName = getdetails.LastName,
+            ProfessionId = getdetails.ProfessionId,
+            BussinesName = getdetails.BussinesName,
+            Experience = getdetails.Experience,
+            PriceRange = getdetails.PriceRange,
+            AddressId = getdetails.AddressId,
+            AccountId = getdetails.AccountId
+        };
+    }
+
+    public BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+    {
+        BussinesDetail addDetails = new BussinesDetail();
+        //addDetails.Id = bussinesDetailsForBusinessOwner.Id;
+        addDetails.FirstName = bussinesDetailsForBusinessOwner.FirstName;
+        addDetails.LastName = bussinesDetailsForBusinessOwner.LastName;
+        addDetails.ProfessionId = bussinesDetailsForBusinessOwner.ProfessionId;
+        addDetails.BussinesName = bussinesDetailsForBusinessOwner.BussinesName;
+        addDetails.Experience = bussinesDetailsForBusinessOwner.Experience;
+        addDetails.AddressId = bussinesDetailsForBusinessOwner.AddressId;
+        addDetails.AccountId = bussinesDetailsForBusinessOwner.AccountId;
+        bussinesDetailsRepo.AddNewBussinesDetails(addDetails);
+        return bussinesDetailsForBusinessOwner;
+
+        /*  BussinesDetail addDetails = bussinesDetailsRepo.AddNewBussinesDetails(bussinesDetailsRepo);
+          return new BussinesDetailsForBusinessOwner()
+          {
+              Id = addDetails.Id,
+              FirstName = addDetails.FirstName,
+              LastName = addDetails.LastName,
+              ProfessionId = addDetails.ProfessionId,
+              BussinesName = addDetails.BussinesName,
+              Experience = addDetails.Experience,
+              PriceRange = addDetails.PriceRange,
+              AddressId = addDetails.AddressId,
+              AccountId = addDetails.AccountId
+          };*/
+    }
+
+    public BussinesDetailsForBusinessOwner UpdateBussinesDetailsForBusinessOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+    {
+        BussinesDetail updateDetails = new BussinesDetail();
+        updateDetails.FirstName = bussinesDetailsForBusinessOwner.FirstName;
+        updateDetails.LastName = bussinesDetailsForBusinessOwner.LastName;
+        updateDetails.ProfessionId = bussinesDetailsForBusinessOwner.ProfessionId;
+        updateDetails.BussinesName = bussinesDetailsForBusinessOwner.BussinesName;
+        updateDetails.Experience = bussinesDetailsForBusinessOwner.Experience;
+        updateDetails.AddressId = bussinesDetailsForBusinessOwner.AddressId;
+        updateDetails.AccountId = bussinesDetailsForBusinessOwner.AccountId;
+        bussinesDetailsRepo.UpdateBussinesDetails(id, updateDetails);
+        return bussinesDetailsForBusinessOwner;
+    }
+
+    public BussinesDetailsForBusinessOwner DeleteBussinesDetailsForBusinessOwner(int id)
+    {
+        BussinesDetail deletedetails = bussinesDetailsRepo.DeleteBussinesDetails(id);
+        return new BussinesDetailsForBusinessOwner()
+        {
+            Id = deletedetails.Id,
+            FirstName = deletedetails.FirstName,
+            LastName = deletedetails.LastName,
+            ProfessionId = deletedetails.ProfessionId,
+            BussinesName = deletedetails.BussinesName,
+            Experience = deletedetails.Experience,
+            PriceRange = deletedetails.PriceRange,
+            AddressId = deletedetails.AddressId,
+            AccountId = deletedetails.AccountId
         };
     }
 }

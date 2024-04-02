@@ -20,14 +20,56 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
     public List<BussinesDetail> GetAllBussinesDetails()
     {
         
-        return context.BussinesDetails./*Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a => a.AccountId).*/ToList();
+        return context.BussinesDetails
+            .Include(b => b.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).ToList();
     }
 
     public BussinesDetail GetBussinesDetailsById(int id)
     {
         return context.BussinesDetails.Where(b => b.Id == id)
-            /*.Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a=>a.AccountId)*/.FirstOrDefault();
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).FirstOrDefault();
     }
+
+    public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
+    {
+        context.BussinesDetails.Add(bussinesDetail);
+        context.SaveChanges();
+        return bussinesDetail;
+    }
+
+    public BussinesDetail UpdateBussinesDetails(int id, BussinesDetail bussinesDetail)
+    {
+        BussinesDetail b = context.BussinesDetails.FirstOrDefault(x => x.Id == id);
+        if (b != null)
+        {
+            b.FirstName = bussinesDetail.FirstName;
+            b.LastName = bussinesDetail.LastName;
+            b.ProfessionId = bussinesDetail.ProfessionId;
+            b.BussinesName = bussinesDetail.BussinesName;
+            b.Experience = bussinesDetail.Experience;
+            b.PriceRange = bussinesDetail.PriceRange;
+            b.AddressId = bussinesDetail.AddressId;
+            b.AccountId = bussinesDetail.AccountId;
+        }
+        context.SaveChanges();
+        return b;
+    }
+
+        public BussinesDetail DeleteBussinesDetails(int id)
+    {
+        /*return context.BussinesDetails.Where(b => b.Id == id)
+            .Include(p => p.ProfessionId)
+            .Include(a => a.AddressId)
+            .Include(ac => ac.AccountId).FirstOrDefault();*/
+        throw new NotImplementedException();
+
+    }
+}
+    
 
 
 
@@ -66,4 +108,4 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
     //    context.SaveChanges();
     //    return bussinesDetail;
     //}
-}
+

@@ -6,6 +6,7 @@ using Dal.DalApi;
 using Dal.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace EmploymentDirectory.Controllers
 {
@@ -18,8 +19,9 @@ namespace EmploymentDirectory.Controllers
         {
             _bussinesDetailsRepoForBusinessOwner = blManager.BussinesDetailsRepoForBussinesOwner;
         }
+
         [HttpGet]
-        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner()
+        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner() 
         {
             List<BussinesDetailsForBusinessOwner> getAll = _bussinesDetailsRepoForBusinessOwner.GetAllBussinesDetailsForBusinessOwners();
             if (getAll != null)

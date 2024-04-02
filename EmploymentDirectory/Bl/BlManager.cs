@@ -16,20 +16,23 @@ public class BlManager
 {
     public BussinesDetailsRepoForClient BussinesDetailsRepoForClient { get;  }
     public BussinesDetailsRepoForBussinesOwner BussinesDetailsRepoForBussinesOwner { get; }
+    public AddressesForBussinesOwner AddressesForBussinesOwner { get; }
 
     public BlManager() {
         ServiceCollection services = new();
         services.AddScoped<DalManager>();
         services.AddScoped<IBussinesDetailsRepoForClient, BussinesDetailsRepoForClient>();
         services.AddScoped<IBussinesDetailsRepoForBusinessOwner, BussinesDetailsRepoForBussinesOwner>();
+        services.AddScoped<IAddressesRepoForBussinesOwner, AddressesForBussinesOwner>();
 
         ServiceProvider servicesProvider = services.BuildServiceProvider();
 
-       BussinesDetailsRepoForClient = (BussinesDetailsRepoForClient)servicesProvider.GetService<IBussinesDetailsRepoForClient>();
-        //BussinesDetailsRepoForBussinesOwner = (BussinesDetailsRepoForBussinesOwner)servicesProvider.GetService<IBussinesDetailsRepoForBussinesOwner>();
+        BussinesDetailsRepoForBussinesOwner = (BussinesDetailsRepoForBussinesOwner)servicesProvider.GetService<IBussinesDetailsRepoForBusinessOwner>();
+        BussinesDetailsRepoForClient = (BussinesDetailsRepoForClient)servicesProvider.GetService<IBussinesDetailsRepoForClient>();
+        AddressesForBussinesOwner = (AddressesForBussinesOwner)servicesProvider.GetServices<IAddressesRepoForBussinesOwner>();
 
 
-    
+
     }
 
     
