@@ -15,8 +15,9 @@ public class DalManager
 {
     public AddressesRepo addresses { get; }
     public BussinesDetailsRepo bussinesDetails { get; }
-    public Profession profession { get; }
-    public Account account { get; }
+    //public Profession profession { get; }
+    //public Account account { get; }
+
     
 
     public DalManager(object constr) 
@@ -25,14 +26,15 @@ public class DalManager
         services.AddScoped<LibraryContext>();
         services.AddScoped<IAddressesRepo, AddressesRepo>();
         services.AddScoped<IBussinesDetailsRepo, BussinesDetailsRepo>();
-        services.AddScoped<Profession>();
-        services.AddScoped<Account>();
+        //services.AddScoped<Profession>();
+        //services.AddScoped<Account>();
 
         ServiceProvider serviceProvider = services.BuildServiceProvider();
 
-        addresses = serviceProvider.GetRequiredService<AddressesRepo>();
-        bussinesDetails = serviceProvider.GetRequiredService<BussinesDetailsRepo>();
-        profession = serviceProvider.GetRequiredService<Profession>();
-        account = serviceProvider.GetRequiredService<Account>();
+        addresses = (AddressesRepo)serviceProvider.GetRequiredService<IAddressesRepo>();
+        bussinesDetails = (BussinesDetailsRepo)serviceProvider.GetRequiredService<IBussinesDetailsRepo>();
+        //profession = serviceProvider.GetRequiredService<Profession>();
+        //account = serviceProvider.GetRequiredService<Account>();
+
     }
 }
