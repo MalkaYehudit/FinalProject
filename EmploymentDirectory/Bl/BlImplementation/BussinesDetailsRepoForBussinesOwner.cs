@@ -62,4 +62,20 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
             AccountId = details.AccountId
         };
     }
+
+    public BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwners(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+    {
+        return new BussinesDetailsForBusinessOwner()
+        {
+            Id = bussinesDetailsForBusinessOwner.Id,
+            FirstName = bussinesDetailsForBusinessOwner.FirstName,
+            LastName = bussinesDetailsForBusinessOwner.LastName,
+            ProfessionId = bussinesDetailsForBusinessOwner.ProfessionId,
+            BussinesName = bussinesDetailsForBusinessOwner.BussinesName,
+            Experience = bussinesDetailsForBusinessOwner.Experience,
+            PriceRange = bussinesDetailsForBusinessOwner.PriceRange,
+            AddressId = bussinesDetailsForBusinessOwner.AddressId,
+            AccountId = bussinesDetailsForBusinessOwner.AccountId
+        };
+    }
 }
