@@ -25,11 +25,33 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public BussinesDetail GetBussinesDetailsById(int id)
     {
-        var item = context.BussinesDetails.Where(b => b.Id == id)
-            .Include(b => b.ProfessionId).Include(b => b.AddressId).Include(a=>a.AccountId).FirstOrDefault();
-        return item; 
+        return context.BussinesDetails.Where(b => b.Id == id)
+            /*.Include(p => p.ProfessionId)
+            .Include(a => a.AddressId)
+            .Include(ac => ac.AccountId).*/.FirstOrDefault();
+    }
+
+    public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
+    {
+        throw new NotImplementedException();
+    }
+
+    public BussinesDetail UpdateBussinesDetails(int id, BussinesDetail bussinesDetail)
+    {
+        throw new NotImplementedException();
+    }
+
+    public BussinesDetail DeleteBussinesDetails(int id)
+    {
+        /*return context.BussinesDetails.Where(b => b.Id == id)
+            .Include(p => p.ProfessionId)
+            .Include(a => a.AddressId)
+            .Include(ac => ac.AccountId).FirstOrDefault();*/
+        throw new NotImplementedException();
 
     }
+}
+    
 
 
 
@@ -68,4 +90,4 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
     //    context.SaveChanges();
     //    return bussinesDetail;
     //}
-}
+

@@ -20,13 +20,13 @@ public class BlManager
     public BlManager() {
         ServiceCollection services = new();
         services.AddScoped<DalManager>();
-        services.AddScoped<BussinesDetailsRepoForClient>();
-        services.AddScoped<BussinesDetailsRepoForBussinesOwner>();
+        services.AddScoped<IBussinesDetailsRepoForClient, BussinesDetailsRepoForClient>();
+        services.AddScoped<IBussinesDetailsRepoForBusinessOwner, BussinesDetailsRepoForBussinesOwner>();
 
         ServiceProvider servicesProvider = services.BuildServiceProvider();
 
         //BussinesDetailsRepoForClient = servicesProvider.GetService<BussinesDetailsRepoForClient>();
-        BussinesDetailsRepoForBussinesOwner = servicesProvider.GetService<BussinesDetailsRepoForBussinesOwner>();
+        BussinesDetailsRepoForBussinesOwner = (BussinesDetailsRepoForBussinesOwner)servicesProvider.GetService<IBussinesDetailsRepoForBusinessOwner>();
 
 
     

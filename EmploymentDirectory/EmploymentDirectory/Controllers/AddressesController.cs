@@ -3,6 +3,7 @@ using Dal.DalImplementation;
 using Dal.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace EmploymentDirectory.Controllers
@@ -18,9 +19,10 @@ namespace EmploymentDirectory.Controllers
         }
         [HttpGet]
         public ActionResult<List<Address>> GetAddresses()
-        {
+        { 
             return addressesRepo.GetAllAddresses();
         }
+
         [HttpGet("{id}")]
         public ActionResult<Address> GetAddress(int id)
         {
