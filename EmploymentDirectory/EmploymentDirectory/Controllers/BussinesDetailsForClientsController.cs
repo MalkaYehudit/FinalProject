@@ -4,6 +4,7 @@ using Bl.BlObjects;
 using Microsoft.AspNetCore.Http;
 
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace EmploymentDirectory.Controllers
 {
@@ -27,8 +28,9 @@ namespace EmploymentDirectory.Controllers
             }
             return NotFound();
         }
+
         [HttpGet("{id}")]
-        public ActionResult<BussinesDetailsForClient> GetAllBussinesDetailsByIdForClient(int id)
+        public ActionResult<BussinesDetailsForClient> GetBussinesDetailsForClientsById(int id)
         {
             BussinesDetailsForClient getById = _bussinesDetailsRepoForClient.GetBussinesDetailsForClientsById(id);
             if (getById != null)
