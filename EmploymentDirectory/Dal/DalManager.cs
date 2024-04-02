@@ -20,7 +20,7 @@ public class DalManager
 
     
 
-    public DalManager(object constr) 
+    public DalManager() 
     { 
         ServiceCollection services = new();
         services.AddScoped<LibraryContext>();
