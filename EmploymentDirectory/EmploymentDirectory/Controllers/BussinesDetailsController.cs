@@ -19,9 +19,9 @@ namespace EmploymentDirectory.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<BussinesDetail>>> GetAllBussineses() 
+        public ActionResult<List<BussinesDetail>> GetAllBussineses() 
         {
-            return await bussinesDetailsRepo.GetAllBussinesDetailsAsync();
+            return  bussinesDetailsRepo.GetAllBussinesDetails();
         }
 
         //[HttpGet("{id}")]
