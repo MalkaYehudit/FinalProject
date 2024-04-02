@@ -25,8 +25,13 @@ public class BlManager
 
         ServiceProvider servicesProvider = services.BuildServiceProvider();
 
+<<<<<<< HEAD
         //BussinesDetailsRepoForClient = servicesProvider.GetService<BussinesDetailsRepoForClient>();
         BussinesDetailsRepoForBussinesOwner = (BussinesDetailsRepoForBussinesOwner)servicesProvider.GetService<IBussinesDetailsRepoForBusinessOwner>();
+=======
+       BussinesDetailsRepoForClient = (BussinesDetailsRepoForClient)servicesProvider.GetService<IBussinesDetailsRepoForClient>();
+        //BussinesDetailsRepoForBussinesOwner = (BussinesDetailsRepoForBussinesOwner)servicesProvider.GetService<IBussinesDetailsRepoForBussinesOwner>();
+>>>>>>> 38949907b33994dee104747ad55c00f94ebaa763
 
 
     
