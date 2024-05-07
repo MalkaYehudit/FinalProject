@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Bl.BlObjects;
 
-public class AddressesForBussinesOwner
+public class AddressesForClient
 {
     public int Id { get; set; }
 
-    public string FirstName { get; set; }
+    public string City { get; set; }
 }
