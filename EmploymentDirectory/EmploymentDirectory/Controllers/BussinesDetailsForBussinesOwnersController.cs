@@ -14,14 +14,14 @@ namespace EmploymentDirectory.Controllers
     [ApiController]
     public class BussinesDetailsForBussinesOwnersController : ControllerBase
     {
-        IBussinesDetailsRepoForBusinessOwner _bussinesDetailsRepoForBusinessOwner;
+        BussinesDetailsRepoForBussinesOwner _bussinesDetailsRepoForBusinessOwner;
         public BussinesDetailsForBussinesOwnersController(BlManager blManager)
         {
             _bussinesDetailsRepoForBusinessOwner = blManager.BussinesDetailsRepoForBussinesOwner;
         }
 
         [HttpGet]
-        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner() 
+        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner()
         {
             List<BussinesDetailsForBusinessOwner> getAll = _bussinesDetailsRepoForBusinessOwner.GetAllBussinesDetailsForBusinessOwners();
             if (getAll != null)
@@ -29,17 +29,36 @@ namespace EmploymentDirectory.Controllers
                 return getAll;
             }
             return NotFound();
-        }
 
-        [HttpGet("{id}")]
-        public ActionResult<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsByIdForBussinesOwner(int id)
-        {
-            BussinesDetailsForBusinessOwner getById = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerById(id);
-            if(getById != null)
+        }
+            [HttpGet("{id}")]
+            public ActionResult<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsByIdForBussinesOwner(int id)
             {
-                return getById;
+                BussinesDetailsForBusinessOwner getById = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerById(id);
+                if (getById != null)
+                {
+                    return getById;
+                }
+                return NotFound();
+
             }
-            return NotFound();
+
+
+
+            [HttpPost]
+            public ActionResult<BussinesDetailsForBusinessOwner> PostBussinesDetailsForBussinesOwner([FromBody] BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+
+            {
+                BussinesDetailsForBusinessOwner post = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner);
+                if (post != null)
+                {
+                    return post;
+                }
+                return NotFound();
+
+
+            }
         }
     }
-}
+
+
