@@ -9,6 +9,5 @@ namespace Dal.DalApi;
 
 public interface IAddressesRepo
 {
-    List<Address> GetAllAddresses();
-    Address GetAddressById(int id);
+    List<Address> GetAddressById(int id);
 }

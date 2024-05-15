@@ -15,16 +15,9 @@ namespace Dal.DalImplementation
         {
             this.context = context;
         }
-
-        public List<Address> GetAllAddresses()
+        public List<Address> GetAddressById(int id)
         {
-            return context.Addresses.ToList();
-
-        }
-
-        public Address GetAddressById(int id)
-        {
-            return context.Addresses.FirstOrDefault(a => a.Id == id);
+            return context.Addresses.Where(a => a.Id == id).ToList();
         }
     }
 }
