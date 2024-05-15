@@ -10,5 +10,5 @@ namespace Bl.BlApi;
 
 public interface IAddressesRepoForClient
 {
-    List<AddressesForClient> GetAllAddressesForClient();
+    List<AddressesForClient> GetAddressesByIdForClient(int id);
 }

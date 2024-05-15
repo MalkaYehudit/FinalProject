@@ -19,10 +19,10 @@ namespace EmploymentDirectory.Controllers
             _addressesRepoForClient = blManager.AddressesRepoForClient;
         }
 
-        [HttpGet]
-        public ActionResult<List<AddressesForClient>> GetAllAddressesForClient()
+        [HttpGet("{id}")]
+        public ActionResult<List<AddressesForClient>> GetAddressesByIdForClient(int id)
         {
-            List<AddressesForClient> getAll = _addressesRepoForClient.GetAllAddressesForClient();
+            List<AddressesForClient> getAll = _addressesRepoForClient.GetAddressesByIdForClient(id);
             if(getAll != null)
             {
                 return getAll;

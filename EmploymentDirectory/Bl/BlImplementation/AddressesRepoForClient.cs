@@ -19,15 +19,14 @@ public class AddressesRepoForClient : IAddressesRepoForClient
     {
         this.addressesRepo = dalManager.addresses;
     }
-    public List<AddressesForClient> GetAllAddressesForClient()
+    public List<AddressesForClient> GetAddressesByIdForClient(int id)
     {
-        List<Address> addressList = addressesRepo.GetAllAddresses();
+        List<Address> addressList = addressesRepo.GetAddressById(id);
         List<AddressesForClient> addressesForClient = new List<AddressesForClient>();
         for (int i = 0; i < addressList.Count; i++)
         {
             addressesForClient.Add(new AddressesForClient()
             {
-                Id = addressList[i].Id,
                 City = addressList[i].City,
             });
         }        
