@@ -21,7 +21,7 @@ namespace EmploymentDirectory.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner()
+        public ActionResult<List<BussinesDetailsForBusinessOwner>> GetAllBussinesDetailsForBussinesOwner() 
         {
             List<BussinesDetailsForBusinessOwner> getAll = _bussinesDetailsRepoForBusinessOwner.GetAllBussinesDetailsForBusinessOwners();
             if (getAll != null)
@@ -29,36 +29,39 @@ namespace EmploymentDirectory.Controllers
                 return getAll;
             }
             return NotFound();
-
         }
-            [HttpGet("{id}")]
-            public ActionResult<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsByIdForBussinesOwner(int id)
+
+        [HttpGet("{id}")]
+        public ActionResult<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsByIdForBussinesOwner(int id)
+        {
+            BussinesDetailsForBusinessOwner getById = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerById(id);
+            if (getById != null)
             {
-                BussinesDetailsForBusinessOwner getById = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerById(id);
-                if (getById != null)
-                {
-                    return getById;
-                }
-                return NotFound();
-
+                return getById;
             }
+            return NotFound();
+        }
 
-
-
-            [HttpPost]
-            public ActionResult<BussinesDetailsForBusinessOwner> PostBussinesDetailsForBussinesOwner([FromBody] BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
-
+        [HttpPut("{id}")]
+        public ActionResult<BussinesDetailsForBusinessOwner> UpdateBussinesDetailsForBussinesOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+        {
+            BussinesDetailsForBusinessOwner update = _bussinesDetailsRepoForBusinessOwner.UpdateBussinesDetailsForBusinessOwner(id, bussinesDetailsForBusinessOwner);
+            if(update != null)
             {
-                BussinesDetailsForBusinessOwner post = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner);
-                if (post != null)
-                {
-                    return post;
-                }
-                return NotFound();
-
-
+                return update;
             }
+            return NotFound();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<BussinesDetailsForBusinessOwner> DeleteBussinesDetailsForBussinesOwner(int id)
+        {
+            BussinesDetailsForBusinessOwner delete = _bussinesDetailsRepoForBusinessOwner.DeleteBussinesDetailsForBusinessOwner(id);
+            if(delete != null)
+            {
+                return delete;
+            }
+            return NotFound();
         }
     }
-
-
+}

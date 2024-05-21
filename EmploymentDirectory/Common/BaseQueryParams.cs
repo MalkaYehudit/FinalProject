@@ -4,9 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common
+namespace Common;
+
+public class BaseQueryParams
 {
-    internal class BaseQueryParams
+    public int PageSize
     {
+        get { return pageSize; }
+        set { if (value > 0 && value < MAX_PAGE_SIZE) pageSize = value; }
     }
+
+
+
+
+
+
 }
