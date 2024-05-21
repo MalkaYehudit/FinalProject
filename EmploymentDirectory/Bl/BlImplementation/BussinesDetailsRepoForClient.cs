@@ -20,7 +20,7 @@ public class BussinesDetailsRepoForClient : IBussinesDetailsRepoForClient
     {
         this.addressesRepo = dalManager.addresses;
         this.bussinesDetailsRepo = dalManager.bussinesDetails;
-        //this.profession = dalManager.profession;
+        this.profession = dalManager.profession;
     }
     public List<BussinesDetailsForClient> GetAllBusinessDetailsForClients()
     {
@@ -33,10 +33,11 @@ public class BussinesDetailsRepoForClient : IBussinesDetailsRepoForClient
                 BussinesName = temp[i].BussinesName,
                 FirstNameOfOwner = temp[i].FirstName,
                 LastNameOfOwner = temp[i].LastName,
-                Profession = temp[i].ProfessionId,
+                Profession = new ProfessionsForBussinesOwner { Profession = temp[i].Profession.Profession1 },
                 PriceRange = temp[i].PriceRange,
                 Experience = temp[i].Experience,
-                City = temp[i].AddressId
+                City = new AddressesForBussinesOwner{ City = temp[i].Address.City }
+                
             });
         }
         return bussinesDetailsForClients;
@@ -50,9 +51,90 @@ public class BussinesDetailsRepoForClient : IBussinesDetailsRepoForClient
             BussinesName = details.BussinesName,
             FirstNameOfOwner = details.FirstName,
             LastNameOfOwner = details.LastName,
-            Profession = details.ProfessionId,
+            Profession = new ProfessionsForBussinesOwner { Profession = details.Profession.Profession1},
             PriceRange = details.PriceRange,
-            City = details.AddressId
+            City = new AddressesForBussinesOwner { City = details.Address.City }
         };
     }
+
+    public List<BussinesDetailsForClient> GetAllBussinesDetailsForClientByCityName(string cityName)
+    {
+        List<BussinesDetail> temp = bussinesDetailsRepo.GetAllBussinesDetailsByCityName(cityName);
+        List<BussinesDetailsForClient> bussinesDetailsForClientsByCityName = new List<BussinesDetailsForClient>();
+        for (int i = 0; i < temp.Count; i++)
+        {
+            bussinesDetailsForClientsByCityName.Add(new BussinesDetailsForClient()
+            {
+                BussinesName = temp[i].BussinesName,
+                FirstNameOfOwner = temp[i].FirstName,
+                LastNameOfOwner = temp[i].LastName,
+                Profession = new ProfessionsForBussinesOwner { Profession = temp[i].Profession.Profession1 },
+                PriceRange = temp[i].PriceRange,
+                Experience = temp[i].Experience,
+                City = new AddressesForBussinesOwner { City = temp[i].Address.City }
+            });
+        }
+        return bussinesDetailsForClientsByCityName;
+    }
+
+    public List<BussinesDetailsForClient> GetAllBussinesDetailsForClientByProfession(string professionName)
+    {
+        List<BussinesDetail> temp = bussinesDetailsRepo.GetAllBussinesDetailsByProfession(professionName);
+        List<BussinesDetailsForClient> bussinesDetailsForClientsByProfession = new List<BussinesDetailsForClient>();
+        for (int i = 0; i < temp.Count; i++)
+        {
+            bussinesDetailsForClientsByProfession.Add(new BussinesDetailsForClient()
+            {
+                BussinesName = temp[i].BussinesName,
+                FirstNameOfOwner = temp[i].FirstName,
+                LastNameOfOwner = temp[i].LastName,
+                Profession = new ProfessionsForBussinesOwner { Profession = temp[i].Profession.Profession1 },
+                PriceRange = temp[i].PriceRange,
+                Experience = temp[i].Experience,
+                City = new AddressesForBussinesOwner { City = temp[i].Address.City }
+            });
+        }
+        return bussinesDetailsForClientsByProfession;
+    }
+
+    public List<BussinesDetailsForClient> GetAllBussinesDetailsForClientByEmployersName(string employersName)
+    {
+        List<BussinesDetail> temp = bussinesDetailsRepo.GetAllBussinesDetailsByEmployersName(employersName);
+        List<BussinesDetailsForClient> bussinesDetailsForClientsByEmployersName = new List<BussinesDetailsForClient>();
+        for (int i = 0; i < temp.Count; i++)
+        {
+            bussinesDetailsForClientsByEmployersName.Add(new BussinesDetailsForClient()
+            {
+                BussinesName = temp[i].BussinesName,
+                FirstNameOfOwner = temp[i].FirstName,
+                LastNameOfOwner = temp[i].LastName,
+                Profession = new ProfessionsForBussinesOwner { Profession = temp[i].Profession.Profession1 },
+                PriceRange = temp[i].PriceRange,
+                Experience = temp[i].Experience,
+                City = new AddressesForBussinesOwner { City = temp[i].Address.City }
+            });
+        }
+        return bussinesDetailsForClientsByEmployersName;
+    }
+
+    public List<BussinesDetailsForClient> GetAllBussinesDetailsForClientByExperience(int experience)
+    {
+        List<BussinesDetail> temp = bussinesDetailsRepo.GetAllBussinesDetailsByExprience(experience);
+        List<BussinesDetailsForClient> bussinesDetailsForClientsByExperience = new List<BussinesDetailsForClient>();
+        for (int i = 0; i < temp.Count; i++)
+        {
+            bussinesDetailsForClientsByExperience.Add(new BussinesDetailsForClient()
+            {
+                BussinesName = temp[i].BussinesName,
+                FirstNameOfOwner = temp[i].FirstName,
+                LastNameOfOwner = temp[i].LastName,
+                Profession = new ProfessionsForBussinesOwner { Profession = temp[i].Profession.Profession1 },
+                PriceRange = temp[i].PriceRange,
+                Experience = temp[i].Experience,
+                City = new AddressesForBussinesOwner { City = temp[i].Address.City }
+            });
+        }
+        return bussinesDetailsForClientsByExperience;
+    }
 }
+

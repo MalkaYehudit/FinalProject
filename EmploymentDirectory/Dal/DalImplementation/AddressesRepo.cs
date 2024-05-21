@@ -10,7 +10,7 @@ namespace Dal.DalImplementation
 {
     public class AddressesRepo : IAddressesRepo
     {
-        LibraryContext context;
+       /* LibraryContext context;
         public AddressesRepo(LibraryContext context)
         {
             this.context = context;
@@ -18,6 +18,6 @@ namespace Dal.DalImplementation
         public List<Address> GetAddressById(int id)
         {
             return context.Addresses.Where(a => a.Id == id).ToList();
-        }
+        }*/
     }
 }

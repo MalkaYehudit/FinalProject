@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bl.BlApi;
 
-public interface IAddressesRepoForClient
+public interface IAddressesRepoForBussinesOwner
 {
-    List<AddressesForClient> GetAddressesByIdForClient(int id);
+    
 }

@@ -13,7 +13,7 @@ namespace Bl.BlObjects
 
         public string LastNameOfOwner { get; set; }
 
-        public int Profession { get; set; }
+        public ProfessionsForBussinesOwner Profession { get; set; }
 
         public string BussinesName { get; set; }
 
@@ -21,6 +21,6 @@ namespace Bl.BlObjects
 
         public string PriceRange { get; set; }
 
-        public int City { get; set; }
+        public AddressesForBussinesOwner City { get; set; }
     }
 }

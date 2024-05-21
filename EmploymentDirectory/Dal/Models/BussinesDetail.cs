@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Dal.Models;
 
@@ -8,9 +9,9 @@ public partial class BussinesDetail
     public int Id { get; set; }
 
     public string FirstName { get; set; }
-
+    
     public string LastName { get; set; }
-
+    //[JsonIgnore]
     public int ProfessionId { get; set; }
 
     public string BussinesName { get; set; }
@@ -18,9 +19,9 @@ public partial class BussinesDetail
     public int Experience { get; set; }
 
     public string PriceRange { get; set; }
-
+    //[JsonIgnore]
     public int AddressId { get; set; }
-
+    //[JsonIgnore]
     public string AccountId { get; set; }
 
     public virtual Account Account { get; set; }

@@ -12,25 +12,25 @@ using System.Threading.Tasks;
 
 namespace Bl.BlImplementation;
 
-public class AddressesRepoForClient : IAddressesRepoForClient
+public class AddressesRepoForBussinesOwner : IAddressesRepoForBussinesOwner
 {
     AddressesRepo addressesRepo;
-    public AddressesRepoForClient(DalManager dalManager)
+    public AddressesRepoForBussinesOwner(DalManager dalManager)
     {
         this.addressesRepo = dalManager.addresses;
     }
-    public List<AddressesForClient> GetAddressesByIdForClient(int id)
+    /*public List<AddressesForBussinesOwner> GetAddressesByIdForClient(int id)
     {
         List<Address> addressList = addressesRepo.GetAddressById(id);
-        List<AddressesForClient> addressesForClient = new List<AddressesForClient>();
+        List<AddressesForBussinesOwner> addressesForClient = new List<AddressesForBussinesOwner>();
         for (int i = 0; i < addressList.Count; i++)
         {
-            addressesForClient.Add(new AddressesForClient()
+            addressesForClient.Add(new AddressesForBussinesOwner()
             {
                 City = addressList[i].City,
             });
         }        
         return addressesForClient;
-    }
+    }*/
 }
 
