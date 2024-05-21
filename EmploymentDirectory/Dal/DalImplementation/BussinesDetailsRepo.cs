@@ -19,7 +19,7 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public List<BussinesDetail> GetAllBussinesDetails()
     {
-        
+
         return context.BussinesDetails
             .Include(b => b.Profession)
             .Include(a => a.Address)
@@ -34,6 +34,37 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
             .Include(ac => ac.Account).FirstOrDefault();
     }
 
+    public List<BussinesDetail> GetAllBussinesDetailsByCityName(string cityName)
+    {
+        return context.BussinesDetails.Where(c => c.Address.City == cityName)
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).ToList();
+    }
+
+    public List<BussinesDetail> GetAllBussinesDetailsByProfession(string professionName)
+    {
+        return context.BussinesDetails.Where(p => p.Profession.Profession1 == professionName)
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).ToList();
+    }
+
+    public List<BussinesDetail> GetAllBussinesDetailsByEmployersName(string employersName)
+    {
+        return context.BussinesDetails.Where(e => e.BussinesName == employersName)
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).ToList();
+    }
+
+    public List<BussinesDetail> GetAllBussinesDetailsByExprience(int experience)
+    {
+        return context.BussinesDetails.Where(ex => ex.Experience == experience)
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).ToList();
+    }
     public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
     {
         context.BussinesDetails.Add(bussinesDetail);
@@ -59,53 +90,11 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
         return b;
     }
 
-        public BussinesDetail DeleteBussinesDetails(int id)
+    public BussinesDetail DeleteBussinesDetails(int id)
     {
-        /*return context.BussinesDetails.Where(b => b.Id == id)
-            .Include(p => p.ProfessionId)
-            .Include(a => a.AddressId)
-            .Include(ac => ac.AccountId).FirstOrDefault();*/
-        throw new NotImplementedException();
-
+        BussinesDetail remove = context.BussinesDetails.FirstOrDefault(b => b.Id == id);
+        context.BussinesDetails.Remove(remove);
+        context.SaveChanges();
+        return remove;
     }
 }
-    
-
-
-
-
-
-
-    //public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
-    //{
-    //    context.BussinesDetails.Add(bussinesDetail);
-    //    context.SaveChanges();
-    //    return bussinesDetail;
-    //}
-
-    //public BussinesDetail UpdateBussinesDetails(int id, BussinesDetail bussinesDetail)
-    //{
-    //    BussinesDetail b = context.BussinesDetails.FirstOrDefault(x => x.Id == id);
-    //    if (b != null)
-    //    {
-    //        b.ProfessionId = bussinesDetail.ProfessionId;
-    //        b.BusinessName = bussinesDetail.BusinessName;
-    //        b.Experience = bussinesDetail.Experience;
-    //        b.CityId = bussinesDetail.CityId;
-    //        b.PriceRange = bussinesDetail.PriceRange;
-    //    }
-    //    context.SaveChanges();
-    //    return b;
-    //}
-
-    //public BussinesDetail DeleteBussinesDetails(int id)
-    //{
-    //    BussinesDetail bussinesDetail = context.BussinesDetails.FirstOrDefault(b => b.Id == id);
-    //    if(bussinesDetail != null)
-    //    {
-    //        context.BussinesDetails.Remove(bussinesDetail);
-    //    }
-    //    context.SaveChanges();
-    //    return bussinesDetail;
-    //}
-

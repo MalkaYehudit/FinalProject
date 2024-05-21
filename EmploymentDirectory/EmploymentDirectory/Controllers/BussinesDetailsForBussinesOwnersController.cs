@@ -42,6 +42,17 @@ namespace EmploymentDirectory.Controllers
             return NotFound();
         }
 
+        [HttpPost]
+        public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+        {
+            BussinesDetailsForBusinessOwner addNewBussines = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner);
+            if (addNewBussines != null)
+            {
+                return addNewBussines;
+            }
+            return NotFound();
+        }
+
         [HttpPut("{id}")]
         public ActionResult<BussinesDetailsForBusinessOwner> UpdateBussinesDetailsForBussinesOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
         {

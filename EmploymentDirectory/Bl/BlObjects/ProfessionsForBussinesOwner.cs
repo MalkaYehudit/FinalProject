@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bl.BlObjects;
 
-public class AddressesForClient
+public class ProfessionsForBussinesOwner
 {
-    public string City { get; set; }
+    public string Profession { get; set; }
 }
