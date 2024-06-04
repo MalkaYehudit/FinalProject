@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NujDWdVdYsDzP3jTsyDANsrso4SnJd0fyZhqVnYRYRc=",
+  "Source": "EmploymentDirectory",
+  "BasePath": "_content/EmploymentDirectory",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
