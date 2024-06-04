@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\FinalProject\\EmploymentDirectory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|h:\\finalproject\\employmentdirectory\\employmentdirectory\\controllers\\addressesforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\addressesforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\bl\\blimplementation\\addressesrepoforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blimplementation\\addressesrepoforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\bl\\blobjects\\addressesforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blobjects\\addressesforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\bl\\blapi\\iaddressesrepoforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\iaddressesrepoforclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BussinesDetailsRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "RelativeToolTip": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T12:42:28.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddressesRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalImplementation\\AddressesRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "RelativeToolTip": "Dal\\DalImplementation\\AddressesRepo.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T08:51:41.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddressesRepoForClient.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlImplementation\\AddressesRepoForClient.cs",
+              "RelativeDocumentMoniker": "Bl\\BlImplementation\\AddressesRepoForClient.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlImplementation\\AddressesRepoForClient.cs",
+              "RelativeToolTip": "Bl\\BlImplementation\\AddressesRepoForClient.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:23:08.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAddressesRepoForClient.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlApi\\IAddressesRepoForClient.cs",
+              "RelativeDocumentMoniker": "Bl\\BlApi\\IAddressesRepoForClient.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlApi\\IAddressesRepoForClient.cs",
+              "RelativeToolTip": "Bl\\BlApi\\IAddressesRepoForClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:21:13.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddressesForClient.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlObjects\\AddressesForClient.cs",
+              "RelativeDocumentMoniker": "Bl\\BlObjects\\AddressesForClient.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlObjects\\AddressesForClient.cs",
+              "RelativeToolTip": "Bl\\BlObjects\\AddressesForClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:21:46.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddressesForClientsController.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\EmploymentDirectory\\Controllers\\AddressesForClientsController.cs",
+              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\AddressesForClientsController.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\EmploymentDirectory\\Controllers\\AddressesForClientsController.cs",
+              "RelativeToolTip": "EmploymentDirectory\\Controllers\\AddressesForClientsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:50:07.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAddressesRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeToolTip": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T08:51:57.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlManager.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlManager.cs",
+              "RelativeDocumentMoniker": "Bl\\BlManager.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlManager.cs",
+              "RelativeToolTip": "Bl\\BlManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T15:22:11.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBussinesDetailsRepoForBusinessOwner.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "RelativeDocumentMoniker": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "RelativeToolTip": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T08:40:01.599Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
