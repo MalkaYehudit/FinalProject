@@ -16,7 +16,7 @@ public class DalManager
     public AddressesRepo addresses { get; }
     public BussinesDetailsRepo bussinesDetails { get; }
     public Profession profession { get; }
-    //public Account account { get; }
+    public Account account { get; }
 
     
 
@@ -27,14 +27,14 @@ public class DalManager
         services.AddScoped<IAddressesRepo, AddressesRepo>();
         services.AddScoped<IBussinesDetailsRepo, BussinesDetailsRepo>();
         services.AddScoped<Profession>();
-        //services.AddScoped<Account>();
+        services.AddScoped<Account>();
 
         ServiceProvider serviceProvider = services.BuildServiceProvider();
 
         addresses = (AddressesRepo)serviceProvider.GetRequiredService<IAddressesRepo>();
         bussinesDetails = (BussinesDetailsRepo)serviceProvider.GetRequiredService<IBussinesDetailsRepo>();
         profession = serviceProvider.GetRequiredService<Profession>();
-        //account = serviceProvider.GetRequiredService<Account>();
+        account = serviceProvider.GetRequiredService<Account>();
 
     }
 }

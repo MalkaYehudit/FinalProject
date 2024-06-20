@@ -10,14 +10,14 @@ namespace Dal.DalImplementation
 {
     public class AddressesRepo : IAddressesRepo
     {
-       /* LibraryContext context;
+        LibraryContext context;
         public AddressesRepo(LibraryContext context)
         {
             this.context = context;
         }
-        public List<Address> GetAddressById(int id)
+        public Address GetAddressById(int id)
         {
-            return context.Addresses.Where(a => a.Id == id).ToList();
-        }*/
+            return context.Addresses.Where(a => a.Id == id).FirstOrDefault();
+        }
     }
 }

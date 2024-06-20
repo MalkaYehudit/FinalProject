@@ -9,10 +9,8 @@ public partial class BussinesDetail
     public int Id { get; set; }
 
     public string FirstName { get; set; }
-    
     public string LastName { get; set; }
     public int ProfessionId { get; set; }
-
     public string BussinesName { get; set; }
     public int Experience { get; set; }
 

@@ -11,7 +11,7 @@ public interface IBussinesDetailsRepoForBusinessOwner
 {
     List<BussinesDetailsForBusinessOwner> GetAllBussinesDetailsForBusinessOwners();
     BussinesDetailsForBusinessOwner GetBussinesDetailsForBusinessOwnerById(int id);
-    BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner);
+    BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName);
     BussinesDetailsForBusinessOwner UpdateBussinesDetailsForBusinessOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner);
     BussinesDetailsForBusinessOwner DeleteBussinesDetailsForBusinessOwner(int id);
 

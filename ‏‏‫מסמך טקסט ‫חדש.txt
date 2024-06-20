@@ -1,0 +1,10 @@
+{
+    "firstName": "Ruti",
+    "lastName": "Dadash",
+    "professionId": 1,
+    "bussinesName": "Imperial Ranking SEO",
+    "experience": 6,
+    "priceRange": "800-1400",
+    "addressId": 4,
+    "accountId": "Rena@2964"
+}

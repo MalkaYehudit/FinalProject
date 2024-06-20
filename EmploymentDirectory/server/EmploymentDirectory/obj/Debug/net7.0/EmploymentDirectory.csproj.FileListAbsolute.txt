@@ -152,9 +152,10 @@ H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\staticwebassets.build.json
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\staticwebassets.development.json
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\scopedcss\bundle\EmploymentDirectory.styles.css
-H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.csproj.CopyComplete
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.dll
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\refint\EmploymentDirectory.dll
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.pdb
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.genruntimeconfig.cache
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\ref\EmploymentDirectory.dll
+H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.sourcelink.json
+H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\Employme.1303AF56.Up2Date

@@ -43,15 +43,16 @@ namespace EmploymentDirectory.Controllers
         }
 
         [HttpPost]
-        public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+        public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName)
         {
-            BussinesDetailsForBusinessOwner addNewBussines = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner);
+            BussinesDetailsForBusinessOwner addNewBussines = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner, cityName);
             if (addNewBussines != null)
             {
                 return addNewBussines;
             }
             return NotFound();
         }
+
 
         [HttpPut("{id}")]
         public ActionResult<BussinesDetailsForBusinessOwner> UpdateBussinesDetailsForBussinesOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)

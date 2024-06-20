@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\FinalProject\\EmploymentDirectory\\server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|h:\\finalproject\\employmentdirectory\\server\\employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\server\\bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|h:\\finalproject\\employmentdirectory\\server\\bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\server\\dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\server\\dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\server\\dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\server\\dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|h:\\finalproject\\employmentdirectory\\server\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IBussinesDetailsRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "RelativeToolTip": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:14:34.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBussinesDetailsRepoForBusinessOwner.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "RelativeDocumentMoniker": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "RelativeToolTip": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:23:55.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BussinesDetailsRepoForBussinesOwner.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "RelativeDocumentMoniker": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "RelativeToolTip": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAADgv0YAAACNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:27:59.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BussinesDetailsForBussinesOwnersController.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "RelativeToolTip": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:46:11.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BussinesDetailsRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "RelativeToolTip": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAuwEkAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T10:35:06.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddressesRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalImplementation\\AddressesRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "RelativeToolTip": "Dal\\DalImplementation\\AddressesRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T09:06:59.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAddressesRepo.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeToolTip": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:31:13.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DalManager.cs",
+              "DocumentMoniker": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalManager.cs",
+              "RelativeDocumentMoniker": "Dal\\DalManager.cs",
+              "ToolTip": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalManager.cs",
+              "RelativeToolTip": "Dal\\DalManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:28:23.227Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
