@@ -1,0 +1,6 @@
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.csproj.AssemblyReference.cache
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.AssemblyInfoInputs.cache
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.AssemblyInfo.cs
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.csproj.CoreCompileInputs.cache
+H:\FinalProject\EmploymentDirectory\server\Common\obj\Debug\net7.0\Common.sourcelink.json

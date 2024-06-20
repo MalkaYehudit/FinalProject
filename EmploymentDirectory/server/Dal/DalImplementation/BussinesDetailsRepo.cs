@@ -65,6 +65,12 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
             .Include(a => a.Address)
             .Include(ac => ac.Account).ToList();
     }
+
+    public int GetCityIdByName(string cityName)
+    {
+        var address = context.Addresses.FirstOrDefault(a => a.City == cityName);
+        return address.Id;
+    }
     public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
     {
         context.BussinesDetails.Add(bussinesDetail);
