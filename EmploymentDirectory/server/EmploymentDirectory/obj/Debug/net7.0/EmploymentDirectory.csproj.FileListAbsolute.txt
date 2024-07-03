@@ -157,5 +157,4 @@ H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.pdb
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.genruntimeconfig.cache
 H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\ref\EmploymentDirectory.dll
-H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.sourcelink.json
-H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\Employme.1303AF56.Up2Date
+H:\FinalProject\EmploymentDirectory\server\EmploymentDirectory\obj\Debug\net7.0\EmploymentDirectory.csproj.CopyComplete
