@@ -27,5 +27,4 @@ H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\Bl.dll
 H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\refint\Bl.dll
 H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\Bl.pdb
 H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\ref\Bl.dll
-H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\Bl.sourcelink.json
-H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\Bl.csproj.Up2Date
+H:\FinalProject\EmploymentDirectory\server\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete
