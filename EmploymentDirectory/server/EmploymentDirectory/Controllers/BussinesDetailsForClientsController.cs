@@ -54,7 +54,7 @@ namespace EmploymentDirectory.Controllers
         [HttpGet("GetAllBussinesDetailsForClientsByProfession/{professionName}")]
         public ActionResult<List<BussinesDetailsForClient>> GetAllBussinesDetailsForClientsByProfession(string professionName)
         {
-            List<BussinesDetailsForClient> getByProfessionName = _bussinesDetailsRepoForClient.GetAllBussinesDetailsForClientByCityName(professionName);
+            List<BussinesDetailsForClient> getByProfessionName = _bussinesDetailsRepoForClient.GetAllBussinesDetailsForClientByProfession(professionName);
             if (getByProfessionName != null)
             {
                 return getByProfessionName;
@@ -65,7 +65,7 @@ namespace EmploymentDirectory.Controllers
         [HttpGet("GetAllBussinesDetailsForClientsByEmployersName/{employersName}")]
         public ActionResult<List<BussinesDetailsForClient>> GetAllBussinesDetailsForClientsByEmployersName(string employersName)
         {
-            List<BussinesDetailsForClient> getByEmployerName = _bussinesDetailsRepoForClient.GetAllBussinesDetailsForClientByCityName(employersName);
+            List<BussinesDetailsForClient> getByEmployerName = _bussinesDetailsRepoForClient.GetAllBussinesDetailsForClientByEmployersName(employersName);
             if (getByEmployerName != null)
             {
                 return getByEmployerName;

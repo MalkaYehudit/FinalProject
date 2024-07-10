@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {}
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {}
   },
   "projects": {
-    "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
+        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
         "projectName": "Bl",
-        "projectPath": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
-        "packagesPath": "C:\\Users\\טאוב רינה\\.nuget\\packages\\",
-        "outputPath": "H:\\FinalProject\\EmploymentDirectory\\server\\Bl\\obj\\",
+        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
+        "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\טאוב רינה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
-                "projectPath": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj"
+              "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
+                "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj"
               }
             }
           }
@@ -42,6 +43,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -73,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
+        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
-        "packagesPath": "C:\\Users\\טאוב רינה\\.nuget\\packages\\",
-        "outputPath": "H:\\FinalProject\\EmploymentDirectory\\server\\Dal\\obj\\",
+        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
+        "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\טאוב רינה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,6 +105,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -111,6 +118,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -152,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14\\RuntimeIdentifierGraph.json"
         }
       }
     }

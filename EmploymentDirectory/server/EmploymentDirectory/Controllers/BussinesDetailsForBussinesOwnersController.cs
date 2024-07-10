@@ -43,9 +43,9 @@ namespace EmploymentDirectory.Controllers
         }
 
         [HttpPost]
-        public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName)
+        public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner([FromBody]BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, [FromQuery]string cityName, [FromQuery]string professionName)
         {
-            BussinesDetailsForBusinessOwner addNewBussines = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner, cityName);
+            BussinesDetailsForBusinessOwner addNewBussines = _bussinesDetailsRepoForBusinessOwner.AddBussinesDetailsForBusinessOwner(bussinesDetailsForBusinessOwner, cityName, professionName);
             if (addNewBussines != null)
             {
                 return addNewBussines;
@@ -55,9 +55,9 @@ namespace EmploymentDirectory.Controllers
 
 
         [HttpPut("{id}")]
-        public ActionResult<BussinesDetailsForBusinessOwner> UpdateBussinesDetailsForBussinesOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+        public ActionResult<BussinesDetailsForBusinessOwner> UpdateBussinesDetailsForBussinesOwner(int id, [FromBody]BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, [FromQuery]string cityName, [FromQuery]string professionName)
         {
-            BussinesDetailsForBusinessOwner update = _bussinesDetailsRepoForBusinessOwner.UpdateBussinesDetailsForBusinessOwner(id, bussinesDetailsForBusinessOwner);
+            BussinesDetailsForBusinessOwner update = _bussinesDetailsRepoForBusinessOwner.UpdateBussinesDetailsForBusinessOwner(id, bussinesDetailsForBusinessOwner, cityName, professionName);
             if(update != null)
             {
                 return update;

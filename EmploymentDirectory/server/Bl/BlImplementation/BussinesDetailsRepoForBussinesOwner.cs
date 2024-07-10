@@ -68,12 +68,17 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
         return bussinesDetailsRepo.GetCityIdByName(cityName);
     }
 
-    public BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName)
+    public int GetProfessionId(string professionName) 
+    {
+        return bussinesDetailsRepo.GetProfessionIdByName(professionName);
+    }
+
+    public BussinesDetailsForBusinessOwner AddBussinesDetailsForBusinessOwner(BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName, string professionName)
     {
         BussinesDetail addDetails = new BussinesDetail();
         addDetails.FirstName = bussinesDetailsForBusinessOwner.FirstName;
         addDetails.LastName = bussinesDetailsForBusinessOwner.LastName;
-        addDetails.ProfessionId = bussinesDetailsForBusinessOwner.ProfessionId;
+        addDetails.ProfessionId = GetProfessionId(professionName);
         addDetails.BussinesName = bussinesDetailsForBusinessOwner.BussinesName;
         addDetails.Experience = bussinesDetailsForBusinessOwner.Experience;
         addDetails.PriceRange = bussinesDetailsForBusinessOwner.PriceRange;
@@ -83,19 +88,20 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
         return bussinesDetailsForBusinessOwner;
     }
 
-    public BussinesDetailsForBusinessOwner UpdateBussinesDetailsForBusinessOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner)
+    public BussinesDetailsForBusinessOwner UpdateBussinesDetailsForBusinessOwner(int id, BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, string cityName, string professionName)
     {
         BussinesDetail updateDetails = new BussinesDetail();
         updateDetails.FirstName = bussinesDetailsForBusinessOwner.FirstName;
         updateDetails.LastName = bussinesDetailsForBusinessOwner.LastName;
-        updateDetails.ProfessionId = bussinesDetailsForBusinessOwner.ProfessionId;
+        updateDetails.ProfessionId = GetProfessionId(professionName);
         updateDetails.BussinesName = bussinesDetailsForBusinessOwner.BussinesName;
         updateDetails.Experience = bussinesDetailsForBusinessOwner.Experience;
         updateDetails.PriceRange = bussinesDetailsForBusinessOwner.PriceRange;
-        updateDetails.AddressId = bussinesDetailsForBusinessOwner.AddressId;
+        updateDetails.AddressId = GetCityId(cityName);
         updateDetails.AccountId = bussinesDetailsForBusinessOwner.AccountId;
         bussinesDetailsRepo.UpdateBussinesDetails(id, updateDetails);
         return bussinesDetailsForBusinessOwner;
+        //return bussinesDetailsRepo.UpdateBussinesDetails(bussinesDetailsForBusinessOwner);
     }
 
     public BussinesDetailsForBusinessOwner DeleteBussinesDetailsForBusinessOwner(int id)

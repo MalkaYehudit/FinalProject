@@ -52,7 +52,7 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
 
     public List<BussinesDetail> GetAllBussinesDetailsByEmployersName(string employersName)
     {
-        return context.BussinesDetails.Where(e => e.BussinesName == employersName)
+        return context.BussinesDetails.Where(f => f.FirstName == employersName)
             .Include(p => p.Profession)
             .Include(a => a.Address)
             .Include(ac => ac.Account).ToList();
@@ -71,6 +71,13 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
         var address = context.Addresses.FirstOrDefault(a => a.City == cityName);
         return address.Id;
     }
+
+    public int GetProfessionIdByName(string professionName) 
+    {
+        var profession = context.Professions.FirstOrDefault(p => p.Profession1 == professionName);
+        return profession.Id;
+    }
+
     public BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail)
     {
         context.BussinesDetails.Add(bussinesDetail);
@@ -94,6 +101,9 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
         }
         context.SaveChanges();
         return b;
+        /*        context.BussinesDetails.Update(bussinesDetail);
+                context.SaveChanges();
+                return bussinesDetail;*/
     }
 
     public BussinesDetail DeleteBussinesDetails(int id)
