@@ -63,6 +63,23 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
         };
     }
 
+    public BussinesDetailsForBusinessOwner GetBussinesDetailsForBusinessOwnerByPassword(string password)
+    {
+        BussinesDetail getdetails = bussinesDetailsRepo.GetAllBussinesDetailsByPassword(password);
+        return new BussinesDetailsForBusinessOwner()
+        {
+            Id = getdetails.Id,
+            FirstName = getdetails.FirstName,
+            LastName = getdetails.LastName,
+            ProfessionId = getdetails.ProfessionId,
+            BussinesName = getdetails.BussinesName,
+            Experience = getdetails.Experience,
+            PriceRange = getdetails.PriceRange,
+            AddressId = getdetails.AddressId,
+            AccountId = getdetails.AccountId
+        };
+    }
+
     public int GetCityId(string cityName)
     {
         return bussinesDetailsRepo.GetCityIdByName(cityName);

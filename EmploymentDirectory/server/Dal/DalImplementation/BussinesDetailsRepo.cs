@@ -66,6 +66,14 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
             .Include(ac => ac.Account).ToList();
     }
 
+    public BussinesDetail GetAllBussinesDetailsByPassword(string password)
+    {
+        return context.BussinesDetails.Where(ex => ex.Account.Password == password)
+            .Include(p => p.Profession)
+            .Include(a => a.Address)
+            .Include(ac => ac.Account).FirstOrDefault();
+    }
+
     public int GetCityIdByName(string cityName)
     {
         var address = context.Addresses.FirstOrDefault(a => a.City == cityName);

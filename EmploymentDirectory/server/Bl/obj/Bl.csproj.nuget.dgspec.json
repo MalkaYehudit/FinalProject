@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {}
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Bl\\Bl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj": {
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Bl\\Bl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
+        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Bl\\Bl.csproj",
         "projectName": "Bl",
-        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\Bl.csproj",
+        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Bl\\Bl.csproj",
         "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
-                "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj"
+              "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj": {
+                "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj"
               }
             }
           }
@@ -83,12 +83,12 @@
         }
       }
     },
-    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj": {
+    "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
+        "projectUniqueName": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
+        "projectPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj",
         "packagesPath": "C:\\Users\\Eli\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\obj\\",
         "projectStyle": "PackageReference",

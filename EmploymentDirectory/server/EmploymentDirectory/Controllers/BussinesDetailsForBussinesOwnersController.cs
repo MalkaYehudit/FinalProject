@@ -42,6 +42,17 @@ namespace EmploymentDirectory.Controllers
             return NotFound();
         }
 
+        [HttpGet("GetBussinesDetailsForBussinesOwnerByPassword/{password}")]
+        public ActionResult<BussinesDetailsForBusinessOwner> GetBussinesDetailsForBussinesOwnerByPassword(string password)
+        {
+            BussinesDetailsForBusinessOwner getByProfessionName = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerByPassword(password);
+            if (getByProfessionName != null)
+            {
+                return getByProfessionName;
+            }
+            return NotFound();
+        }
+
         [HttpPost]
         public ActionResult<BussinesDetailsForBusinessOwner> AddNewBussinesDetailsForBussinesOwner([FromBody]BussinesDetailsForBusinessOwner bussinesDetailsForBusinessOwner, [FromQuery]string cityName, [FromQuery]string professionName)
         {

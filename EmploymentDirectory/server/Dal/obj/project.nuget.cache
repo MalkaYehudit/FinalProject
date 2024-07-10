@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CKxsH5WEnlE=",
+  "dgSpecHash": "SNW6vJ7y6gU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Dal.csproj",
+  "projectFilePath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\Server\\Dal\\Dal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eli\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Eli\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -75,7 +75,7 @@
       "code": "NU1900",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: '<' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0."
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

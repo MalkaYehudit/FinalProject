@@ -15,6 +15,7 @@ public interface IBussinesDetailsRepo
     List<BussinesDetail> GetAllBussinesDetailsByProfession(string professionName);
     List<BussinesDetail> GetAllBussinesDetailsByEmployersName(string employersName);
     List<BussinesDetail> GetAllBussinesDetailsByExprience(int experience);
+    List<BussinesDetail> GetAllBussinesDetailsByPassword(string password);
     BussinesDetail AddNewBussinesDetails(BussinesDetail bussinesDetail);
     BussinesDetail UpdateBussinesDetails(int id, BussinesDetail bussinesDetail);
     BussinesDetail DeleteBussinesDetails(int id);
