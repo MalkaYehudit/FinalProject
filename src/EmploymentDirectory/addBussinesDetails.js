@@ -1,72 +1,104 @@
-// import React from "react";
-// import axios from "axios";
+import React, { useState } from "react";
+import axios from "axios";
 
-// function AddNewBussines() {
-//    axios.post('http://localhost:5111/api/BussinesDetailsForBussinesOwners')
-//    .then(res => {
-//     const bussinesDetailsForBussinesOwner = res.data;
-//     console.log(bussinesDetailsForBussinesOwner);
-//   })
-// //   axios.get('http://localhost:5111/api/BussinesDetailsForBussinesOwners')
-// //    .then(res => {
-// //     const bussinesDetailsForBussinesOwner = res.data;
-// //     console.log(bussinesDetailsForBussinesOwner);
-// //   })
-// //   .catch(error => {
-// //     console.error(error);
-// //   });
+function AddBusinessDetails() {
+    const [bussinesDetails, setBussinesDetails] = useState({
+        BussinesName: '',
+        FirstName: '',
+        LastName: '',
+        PriceRange: '',
+        Experience: '',
+        AccountID: '',
+    });
+    const [professionName, setProfessionName] = useState('');
+    const [cityName, setCityName] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
-// //   return (
-// //     <>
-      
-// //     </>
-// //   );  
-// }
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setLoading(true);
 
-import React from 'react';
-import axios from 'axios';
+        try {
+            const response = await axios.post(`http://localhost:5111/api/BussinesDetailsForBussinesOwners?cityName=${encodeURIComponent(cityName)}&professionName=${encodeURIComponent(professionName)}`, bussinesDetails);
+            console.log('Response:', response.data);
+            setLoading(false);
+            setError('');
+            // Optionally, clear the form after successful submission
+            setBussinesDetails({
+                BussinesName: '',
+                FirstName: '',
+                LastName: '',
+                PriceRange: '',
+                Experience: '',
+                AccountID: '',
+            });
+            setProfessionName('');
+            setCityName('');
+            alert('Business details added successfully!');
+        } catch (error) {
+            console.error('Error adding business details:', error);
+            setError('Failed to add business details');
+            setLoading(false);
+        }
+    };
 
-function AddNewBussines() {
-    axios.post('http://localhost:5111/api/BussinesDetailsForBussinesOwners')
-   .then(res => {
-    const bussinesDetailsForBussinesOwner = res.data;
-    console.log(bussinesDetailsForBussinesOwner);
-  })
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        if (name === 'cityName') {
+            setCityName(value);
+        } else if (name === 'professionName') {
+            setProfessionName(value);
+        } else {
+            setBussinesDetails(prevState => ({
+                ...prevState,
+                [name]: value
+            }));
+        }
+    };
+    return (
+        <div>
+            <h2>Add Business Details</h2>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Bussines Name:</label>
+                    <input type="text" name="BussinesName" value={bussinesDetails.BussinesName} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>First Name:</label>
+                    <input type="text" name="FirstName" value={bussinesDetails.FirstName} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>Last Name:</label>
+                    <input type="text" name="LastName" value={bussinesDetails.LastName} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>Profession:</label>
+                    <input type="text" name="professionName" value={professionName} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>Price Range:</label>
+                    <input type="text" name="PriceRange" value={bussinesDetails.PriceRange} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>Experience:</label>
+                    <input type="text" name="Experience" value={bussinesDetails.Experience} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>City:</label>
+                    <input type="text" name="cityName" value={cityName} onChange={handleChange} required />
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="text" name="AccountID" value={bussinesDetails.AccountID} onChange={handleChange} required />
+                </div>
+                <button type="submit">Add Business Details</button>
+            </form>
+
+            {loading && <p>Loading...</p>}
+            {error && <p>{error}</p>}
+        </div>
+    );
 }
-// export default class PersonAdd extends React.Component {
-//   state = {
-//     name: ''
-//   }
 
-//   handleChange = event => {
-//     this.setState({ name: event.target.value });
-//   }
-
-//   handleSubmit = event => {
-//     event.preventDefault();
-
-//     const user = {
-//       name: this.state.name
-//     };
-
-//     axios.post(`https://jsonplaceholder.typicode.com/users`, { user })
-//       .then(res => {
-//         console.log(res);
-//         console.log(res.data);
-//       })
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         <form onSubmit={this.handleSubmit}>
-//           <label>
-//             Person Name:
-//             <input type="text" name="name" onChange={this.handleChange} />
-//           </label>
-//           <button type="submit">Add</button>
-//         </form>
-//       </div>
-//     )
-//   }
-// }
+export default AddBusinessDetails;
