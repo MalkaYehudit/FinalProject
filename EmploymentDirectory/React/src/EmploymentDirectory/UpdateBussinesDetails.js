@@ -54,6 +54,32 @@ const UpdateBusinessDetails = () => {
         }
     };
 
+//פונקצית alert
+    const handleDelete = (userId, navigate) => {
+        const isConfirmed = window.confirm("Are you sure you want to delete this user?");
+        if (isConfirmed) {
+          deleteUser(userId, navigate);
+        }
+      };
+// פונקציה למחיקת משתמש
+const deleteUser = async (userId, navigate) => {
+  try {
+    const response = await axios.delete(`http://localhost:5111/api/BussinesDetailsForBussinesOwners/${user.Id}`);
+    
+    if (response.status === 200) {
+      console.log('User deleted successfully:', response.data);
+     
+      navigate('/HomePage');
+    }
+  } catch (error) {
+    console.error('Error deleting user:', error);
+  
+  }
+};
+
+
+
+
     return (
         <div>
             {user && (
@@ -156,11 +182,14 @@ const UpdateBusinessDetails = () => {
                         <button onClick={() => handleUpdate('Profession')}>
                             {editMode.Profession ? 'Update' : 'Change'}
                         </button>
+                        <button onClick={() => handleDelete(user.Id, location.state.navigate)}>Delete</button>
                     </p>
                 </div>
             )}
         </div>
+
     );
 };
 
 export default UpdateBusinessDetails;
+//export default deleteUser;
