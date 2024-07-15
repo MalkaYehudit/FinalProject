@@ -2,9 +2,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import GetBussinesDetailsForClient from './EmploymentDirectory/HomePage';
-import GetOwnersDetails from './EmploymentDirectory/OwnersDetails'
+// import GetBussinesDetailsForBussinesOwnerByPassword from './EmploymentDirectory/Login';
+import AddBusinessDetails from './EmploymentDirectory/AddBussinesDetails';
+import LoginPage from './EmploymentDirectory/Login';
+
+import UpdateBusinessDetails from './EmploymentDirectory/UpdateBussinesDetails';
 // import Search from './EmploymentDirectory/Search';
-// import Login from './EmploymentDirectory/Login';
 
 function App() {
   return (
@@ -15,7 +18,9 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route exact path='/' element={<GetBussinesDetailsForClient/>} />
-            <Route exact path='/OwnersDetails' element={<GetOwnersDetails/>}/>
+            <Route exact path='/Login' element={<LoginPage/>}/>
+            <Route exact path='/AddBusinessDetails' element={<AddBusinessDetails/>} />
+            <Route exact path='/UpdateBusinessDetails' element={<UpdateBusinessDetails/>}/>
           </Routes>
         </BrowserRouter>
         {/* <img src={logo} className='App-logo' alt='logo'/>
