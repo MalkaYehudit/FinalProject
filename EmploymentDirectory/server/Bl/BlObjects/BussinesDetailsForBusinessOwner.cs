@@ -14,7 +14,7 @@ public class BussinesDetailsForBusinessOwner
 
     public string LastName { get; set; }
 
-    public int ProfessionId { get; set; }
+    public ProfessionsForBussinesOwner Profession { get; set; }
 
     public string BussinesName { get; set; }
 
@@ -22,7 +22,7 @@ public class BussinesDetailsForBusinessOwner
 
     public string PriceRange { get; set; }
 
-    public int AddressId { get; set; }
+    public AddressesForBussinesOwner City { get; set; }
 
     public string AccountId { get; set; }
 }
