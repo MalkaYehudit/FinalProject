@@ -35,11 +35,11 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
                 Id = bussinesDetailsList[i].Id,
                 FirstName = bussinesDetailsList[i].FirstName,
                 LastName = bussinesDetailsList[i].LastName,
-                ProfessionId = bussinesDetailsList[i].ProfessionId,
+                Profession = new ProfessionsForBussinesOwner { Profession = bussinesDetailsList[i].Profession.Profession1 },
                 BussinesName = bussinesDetailsList[i].BussinesName,
                 Experience = bussinesDetailsList[i].Experience,
                 PriceRange = bussinesDetailsList[i].PriceRange,
-                AddressId = bussinesDetailsList[i].AddressId,
+                City = new AddressesForBussinesOwner { City = bussinesDetailsList[i].Address.City },
                 AccountId = bussinesDetailsList[i].AccountId
             });
         }
@@ -54,28 +54,28 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
             Id = getdetails.Id,
             FirstName = getdetails.FirstName,
             LastName = getdetails.LastName,
-            ProfessionId = getdetails.ProfessionId,
+            Profession = new ProfessionsForBussinesOwner { Profession = getdetails.Profession.Profession1 },
             BussinesName = getdetails.BussinesName,
             Experience = getdetails.Experience,
             PriceRange = getdetails.PriceRange,
-            AddressId = getdetails.AddressId,
+            City = new AddressesForBussinesOwner { City = getdetails.Address.City},
             AccountId = getdetails.AccountId
         };
     }
 
     public BussinesDetailsForBusinessOwner GetBussinesDetailsForBusinessOwnerByPassword(string password)
     {
-        BussinesDetail getdetails = bussinesDetailsRepo.GetAllBussinesDetailsByPassword(password);
+        BussinesDetail getdetails = bussinesDetailsRepo.GetBussinesDetailsByPassword(password);
         return new BussinesDetailsForBusinessOwner()
         {
             Id = getdetails.Id,
             FirstName = getdetails.FirstName,
             LastName = getdetails.LastName,
-            ProfessionId = getdetails.ProfessionId,
+            Profession = new ProfessionsForBussinesOwner { Profession = getdetails.Profession.Profession1 },
             BussinesName = getdetails.BussinesName,
             Experience = getdetails.Experience,
             PriceRange = getdetails.PriceRange,
-            AddressId = getdetails.AddressId,
+            City = new AddressesForBussinesOwner { City = getdetails.Address.City },
             AccountId = getdetails.AccountId
         };
     }
@@ -118,7 +118,6 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
         updateDetails.AccountId = bussinesDetailsForBusinessOwner.AccountId;
         bussinesDetailsRepo.UpdateBussinesDetails(id, updateDetails);
         return bussinesDetailsForBusinessOwner;
-        //return bussinesDetailsRepo.UpdateBussinesDetails(bussinesDetailsForBusinessOwner);
     }
 
     public BussinesDetailsForBusinessOwner DeleteBussinesDetailsForBusinessOwner(int id)
@@ -129,11 +128,11 @@ public class BussinesDetailsRepoForBussinesOwner : IBussinesDetailsRepoForBusine
             Id = deletedetails.Id,
             FirstName = deletedetails.FirstName,
             LastName = deletedetails.LastName,
-            ProfessionId = deletedetails.ProfessionId,
+            Profession = new ProfessionsForBussinesOwner { Profession = deletedetails.Profession.Profession1 },
             BussinesName = deletedetails.BussinesName,
             Experience = deletedetails.Experience,
             PriceRange = deletedetails.PriceRange,
-            AddressId = deletedetails.AddressId,
+            City = new AddressesForBussinesOwner { City = deletedetails.Address.City },
             AccountId = deletedetails.AccountId
         };
     }
