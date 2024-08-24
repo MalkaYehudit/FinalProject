@@ -3,16 +3,16 @@ import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 
 const UpdateBusinessDetails = () => {
-    const [user, setUser] = useState(null); // Initialize with null or an empty object
+    const [user, setUser] = useState(null);
     const [editMode, setEditMode] = useState({
         Id: false,
-        BussinesName: false,
-        FirstName: false,
-        LastName: false,
-        PriceRange: false,
-        Experience: false,
-        City: false,
-        Profession: false,
+        bussinesName: false,
+        firstNameOfOwner: false,
+        lastNameOfOwner: false,
+        priceRange: false,
+        experience: false,
+        city: false,
+        profession: false,
     });
 
     const location = useLocation();
@@ -39,9 +39,16 @@ const UpdateBusinessDetails = () => {
 
     const handleUpdate = async (field) => {
         try {
-            const response = await axios.put(`http://localhost:5111/api/BussinesDetailsForBussinesOwners/${user.Id}?cityName=${encodeURIComponent(user.cityName)}&professionName=${encodeURIComponent(user.professionName)}`, {
-                [field]: user[field],
-            });
+            const data = {
+                [field]: user[field], // Dynamically set the field to update
+            };
+            const response = await axios.put(`http://localhost:5111/api/BussinesDetailsForBussinesOwners/${user.Id}?cityName=${encodeURIComponent(user.city)}&professionName=${encodeURIComponent(user.profession)}`, data,
+                {
+                    headers: {
+                        'Content-Type': 'application/json', // Ensure correct content type
+                    },
+                }
+            );
 
             if (response.status === 200) {
                 toggleEditMode(field);
@@ -54,142 +61,113 @@ const UpdateBusinessDetails = () => {
         }
     };
 
-//פונקצית alert
-    const handleDelete = (userId, navigate) => {
-        const isConfirmed = window.confirm("Are you sure you want to delete this user?");
-        if (isConfirmed) {
-          deleteUser(userId, navigate);
-        }
-      };
-// פונקציה למחיקת משתמש
-const deleteUser = async (userId, navigate) => {
-  try {
-    const response = await axios.delete(`http://localhost:5111/api/BussinesDetailsForBussinesOwners/${user.Id}`);
-    
-    if (response.status === 200) {
-      console.log('User deleted successfully:', response.data);
-     
-      navigate('/HomePage');
-    }
-  } catch (error) {
-    console.error('Error deleting user:', error);
-  
-  }
-};
-
-
-
-
     return (
         <div>
             {user && (
                 <div>
                     <h2>User Profile</h2>
                     <p>
-                        Bussines Name: {editMode.BussinesName ? (
+                        Bussines Name: {editMode.bussinesName ? (
                             <input
                                 type="text"
-                                value={user.BussinesName}
-                                onChange={(e) => handleInputChange(e, 'BussinesName')}
+                                value={user.bussinesName}
+                                onChange={(e) => handleInputChange(e, 'bussinesName')}
                             />
                         ) : (
-                            <span>{user.BussinesName}</span>
+                            <span>{user.bussinesName}</span>
                         )}
-                        <button onClick={() => handleUpdate('BussinesName')}>
-                            {editMode.BussinesName ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('bussinesName')}>
+                            {editMode.bussinesName ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        First Name: {editMode.FirstName ? (
+                        First Name: {editMode.firstName ? (
                             <input
                                 type="text"
-                                value={user.email}
-                                onChange={(e) => handleInputChange(e, 'FirstName')}
+                                value={user.firstName}
+                                onChange={(e) => handleInputChange(e, 'firstName')}
                             />
                         ) : (
-                            <span>{user.FirstName}</span>
+                            <span>{user.firstName}</span>
                         )}
-                        <button onClick={() => handleUpdate('FirstName')}>
-                            {editMode.FirstName ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('firstName')}>
+                            {editMode.firstName ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        Last Name: {editMode.LastName ? (
+                        Last Name: {editMode.lastName ? (
                             <input
                                 type="text"
-                                value={user.LastName}
-                                onChange={(e) => handleInputChange(e, 'LastName')}
+                                value={user.lastName}
+                                onChange={(e) => handleInputChange(e, 'lastName')}
                             />
                         ) : (
-                            <span>{user.LastName}</span>
+                            <span>{user.lastName}</span>
                         )}
-                        <button onClick={() => handleUpdate('LastName')}>
-                            {editMode.LastName ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('lastName')}>
+                            {editMode.lastName ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        Price Range: {editMode.PriceRange ? (
+                        Price Range: {editMode.priceRange ? (
                             <input
                                 type="text"
-                                value={user.PriceRange}
-                                onChange={(e) => handleInputChange(e, 'PriceRange')}
+                                value={user.priceRange}
+                                onChange={(e) => handleInputChange(e, 'priceRange')}
                             />
                         ) : (
-                            <span>{user.PriceRange}</span>
+                            <span>{user.priceRange}</span>
                         )}
-                        <button onClick={() => handleUpdate('PriceRange')}>
-                            {editMode.PriceRange ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('priceRange')}>
+                            {editMode.priceRange ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        Experience: {editMode.Experience ? (
+                        Experience: {editMode.experience ? (
                             <input
                                 type="text"
-                                value={user.Experience}
-                                onChange={(e) => handleInputChange(e, 'Experience')}
+                                value={user.experience}
+                                onChange={(e) => handleInputChange(e, 'experience')}
                             />
                         ) : (
-                            <span>{user.Experience}</span>
+                            <span>{user.experience}</span>
                         )}
-                        <button onClick={() => handleUpdate('Experience')}>
-                            {editMode.Experience ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('experience')}>
+                            {editMode.experience ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        City: {editMode.City ? (
+                        City: {editMode.city ? (
                             <input
                                 type="text"
-                                value={user.City}
-                                onChange={(e) => handleInputChange(e, 'City')}
+                                value={user.city}
+                                onChange={(e) => handleInputChange(e, 'city')}
                             />
                         ) : (
-                            <span>{user.City}</span>
+                            <span>{user.city}</span>
                         )}
-                        <button onClick={() => handleUpdate('City')}>
-                            {editMode.City ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('city')}>
+                            {editMode.city ? 'Update' : 'Change'}
                         </button>
                     </p>
                     <p>
-                        Profession: {editMode.Profession ? (
+                        Profession: {editMode.profession ? (
                             <input
                                 type="text"
-                                value={user.Profession}
-                                onChange={(e) => handleInputChange(e, 'Profession')}
+                                value={user.profession}
+                                onChange={(e) => handleInputChange(e, 'profession')}
                             />
                         ) : (
-                            <span>{user.Profession}</span>
+                            <span>{user.profession}</span>
                         )}
-                        <button onClick={() => handleUpdate('Profession')}>
-                            {editMode.Profession ? 'Update' : 'Change'}
+                        <button onClick={() => handleUpdate('profession')}>
+                            {editMode.profession ? 'Update' : 'Change'}
                         </button>
-                        <button onClick={() => handleDelete(user.Id, location.state.navigate)}>Delete</button>
                     </p>
                 </div>
             )}
         </div>
-
     );
 };
 
 export default UpdateBusinessDetails;
-//export default deleteUser;

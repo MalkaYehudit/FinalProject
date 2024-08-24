@@ -66,7 +66,7 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
             .Include(ac => ac.Account).ToList();
     }
 
-    public BussinesDetail GetAllBussinesDetailsByPassword(string password)
+    public BussinesDetail GetBussinesDetailsByPassword(string password)
     {
         return context.BussinesDetails.Where(ex => ex.Account.Password == password)
             .Include(p => p.Profession)
@@ -109,9 +109,6 @@ public class BussinesDetailsRepo : IBussinesDetailsRepo
         }
         context.SaveChanges();
         return b;
-        /*        context.BussinesDetails.Update(bussinesDetail);
-                context.SaveChanges();
-                return bussinesDetail;*/
     }
 
     public BussinesDetail DeleteBussinesDetails(int id)
