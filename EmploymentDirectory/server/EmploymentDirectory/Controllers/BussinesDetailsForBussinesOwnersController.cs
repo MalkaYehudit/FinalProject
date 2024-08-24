@@ -42,8 +42,8 @@ namespace EmploymentDirectory.Controllers
             return NotFound();
         }
 
-        [HttpGet("GetBussinesDetailsForBussinesOwnerByPassword/{password}")]
-        public ActionResult<BussinesDetailsForBusinessOwner> GetBussinesDetailsForBussinesOwnerByPassword(string password)
+        [HttpGet("GetBussinesDetailsForBussinesOwnerByPassword")]
+        public ActionResult<BussinesDetailsForBusinessOwner> GetBussinesDetailsForBussinesOwnerByPassword([FromQuery]string password)
         {
             BussinesDetailsForBusinessOwner getByProfessionName = _bussinesDetailsRepoForBusinessOwner.GetBussinesDetailsForBusinessOwnerByPassword(password);
             if (getByProfessionName != null)

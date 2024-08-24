@@ -1,77 +1,75 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\",
+  "WorkspaceRootPath": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalapi\\iprofessionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\iprofessionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\bl\\blobjects\\bussinesdetailsforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blobjects\\bussinesdetailsforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.BussinesDetails.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Addresses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\employmentdirectory\\controllers\\bussinesdetailsforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\bussinesdetailsforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blimplementation\\bussinesdetailsrepoforbussinesowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\bussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blapi\\ibussinesdetailsrepoforbusinessowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Professions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Accounts.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\bussinesdetailsforbussinesownerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\employmentdirectory\\controllers\\bussinesdetailsforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\controllers\\bussinesdetailsforclientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\ibussinesdetailsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalimplementation\\professionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalimplementation\\professionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\professionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalapi\\iprofessionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\iprofessionsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{825D65AC-4A0C-484A-ABA0-DD74F239EA15}|Bl\\Bl.csproj|solutionrelative:bl\\blmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalapi\\iaddressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\dalimplementation\\addressesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\dal\\models\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\dal\\models\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97E49F26-F378-4783-8A83-C734A4147BFD}|Dal\\Dal.csproj|solutionrelative:dal\\models\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\employmentdirectory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\employmentdirectory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\finalproject\\employmentdirectory\\server\\employmentdirectory\\employmentdirectory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|c:\\users\\eli\\documents\\rena\\interview\\employment-directory\\employmentdirectory\\server\\employmentdirectory\\employmentdirectory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{DD8DE3E2-F900-4917-8F24-4DBF6E03EC7D}|EmploymentDirectory\\EmploymentDirectory.csproj|solutionrelative:employmentdirectory\\employmentdirectory.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -82,74 +80,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.BussinesDetails [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.BussinesDetails.sql",
-              "ToolTip": "dbo.BussinesDetails [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-10T14:08:59.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BussinesDetailsForBussinesOwnersController.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
-              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
-              "RelativeToolTip": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAuwD8AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T08:46:11.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BussinesDetailsForClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
-              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
-              "RelativeToolTip": "EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAgwEsAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T20:12:34.27Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "BussinesDetailsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
               "RelativeDocumentMoniker": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\BussinesDetailsRepo.cs",
               "RelativeToolTip": "Dal\\DalImplementation\\BussinesDetailsRepo.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAuwFgAAAAFAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwEEAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T10:35:06.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T10:35:06.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BussinesDetailsRepoForBussinesOwner.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "RelativeDocumentMoniker": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "RelativeToolTip": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAuwIIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:27:59.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BussinesDetailsForBusinessOwner.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlObjects\\BussinesDetailsForBusinessOwner.cs",
+              "RelativeDocumentMoniker": "Bl\\BlObjects\\BussinesDetailsForBusinessOwner.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlObjects\\BussinesDetailsForBusinessOwner.cs",
+              "RelativeToolTip": "Bl\\BlObjects\\BussinesDetailsForBusinessOwner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T22:26:43.907Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "dbo.Addresses [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Addresses.sql",
-              "ToolTip": "dbo.Addresses [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-10T12:44:35.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "IBussinesDetailsRepoForBusinessOwner.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
               "RelativeDocumentMoniker": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
               "RelativeToolTip": "Bl\\BlApi\\IBussinesDetailsRepoForBusinessOwner.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -158,166 +133,166 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IBussinesDetailsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
-              "RelativeDocumentMoniker": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
-              "RelativeToolTip": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T13:14:34.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BussinesDetailsRepoForBussinesOwner.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
-              "RelativeDocumentMoniker": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
-              "RelativeToolTip": "Bl\\BlImplementation\\BussinesDetailsRepoForBussinesOwner.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAYwGUAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T16:27:59.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.Professions [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Professions.sql",
-              "ToolTip": "dbo.Professions [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-10T12:40:32.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.Accounts [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Accounts.sql",
-              "ToolTip": "dbo.Accounts [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-10T12:52:28.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DalManager.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalManager.cs",
-              "RelativeDocumentMoniker": "Dal\\DalManager.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalManager.cs",
-              "RelativeToolTip": "Dal\\DalManager.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T16:28:23.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProfessionsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\ProfessionsRepo.cs",
-              "RelativeDocumentMoniker": "Dal\\DalImplementation\\ProfessionsRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\ProfessionsRepo.cs",
-              "RelativeToolTip": "Dal\\DalImplementation\\ProfessionsRepo.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T19:34:51.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "IProfessionsRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IProfessionsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IProfessionsRepo.cs",
               "RelativeDocumentMoniker": "Dal\\DalApi\\IProfessionsRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IProfessionsRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IProfessionsRepo.cs",
               "RelativeToolTip": "Dal\\DalApi\\IProfessionsRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T19:32:58.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
+              "Title": "dbo.BussinesDetails [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.BussinesDetails.sql",
+              "ToolTip": "dbo.BussinesDetails [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-15T14:58:45.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BussinesDetailsForBussinesOwnersController.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "RelativeToolTip": "EmploymentDirectory\\Controllers\\BussinesDetailsForBussinesOwnersController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAuwCwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:46:11.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Professions [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_ELI_DOCUMENTS_RENA_FINALPROJECT_EMPLOYMENTDIRECTORY_SERVER_DB_EMPLOYMENTDIRECTORY.MDF/True/SqlTable/dbo.Professions.sql",
+              "ToolTip": "dbo.Professions [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-14T15:53:43.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BussinesDetailsForClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
+              "RelativeDocumentMoniker": "EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
+              "RelativeToolTip": "EmploymentDirectory\\Controllers\\BussinesDetailsForClientsController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAgwEsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T20:12:34.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBussinesDetailsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "RelativeToolTip": "Dal\\DalApi\\IBussinesDetailsRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T13:14:34.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DalManager.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalManager.cs",
+              "RelativeDocumentMoniker": "Dal\\DalManager.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalManager.cs",
+              "RelativeToolTip": "Dal\\DalManager.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T16:28:23.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfessionsRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\ProfessionsRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalImplementation\\ProfessionsRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\ProfessionsRepo.cs",
+              "RelativeToolTip": "Dal\\DalImplementation\\ProfessionsRepo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T19:34:51.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "BlManager.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlManager.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlManager.cs",
               "RelativeDocumentMoniker": "Bl\\BlManager.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Bl\\BlManager.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Bl\\BlManager.cs",
               "RelativeToolTip": "Bl\\BlManager.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAwwCAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T18:36:28.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T18:36:28.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAddressesRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeDocumentMoniker": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalApi\\IAddressesRepo.cs",
+              "RelativeToolTip": "Dal\\DalApi\\IAddressesRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T08:31:13.074Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IAddressesRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IAddressesRepo.cs",
-              "RelativeDocumentMoniker": "Dal\\DalApi\\IAddressesRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalApi\\IAddressesRepo.cs",
-              "RelativeToolTip": "Dal\\DalApi\\IAddressesRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T08:31:13.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "AddressesRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\AddressesRepo.cs",
               "RelativeDocumentMoniker": "Dal\\DalImplementation\\AddressesRepo.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\DalImplementation\\AddressesRepo.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\DalImplementation\\AddressesRepo.cs",
               "RelativeToolTip": "Dal\\DalImplementation\\AddressesRepo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T09:06:59.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\appsettings.json",
-              "RelativeDocumentMoniker": "EmploymentDirectory\\appsettings.json",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\appsettings.json",
-              "RelativeToolTip": "EmploymentDirectory\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-07T12:57:58.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T09:06:59.402Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "LibraryContext.cs",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Models\\LibraryContext.cs",
-              "RelativeDocumentMoniker": "Dal\\Models\\LibraryContext.cs",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\Dal\\Models\\LibraryContext.cs",
-              "RelativeToolTip": "Dal\\Models\\LibraryContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBwAAADwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T12:58:12.201Z",
-              "EditorCaption": ""
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\appsettings.json",
+              "RelativeDocumentMoniker": "EmploymentDirectory\\appsettings.json",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\appsettings.json",
+              "RelativeToolTip": "EmploymentDirectory\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-07T12:57:58.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
+              "Title": "LibraryContext.cs",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\Models\\LibraryContext.cs",
+              "RelativeDocumentMoniker": "Dal\\Models\\LibraryContext.cs",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\Dal\\Models\\LibraryContext.cs",
+              "RelativeToolTip": "Dal\\Models\\LibraryContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBwAAADwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T12:58:12.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "EmploymentDirectory.csproj",
-              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\EmploymentDirectory.csproj",
+              "DocumentMoniker": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\EmploymentDirectory.csproj",
               "RelativeDocumentMoniker": "EmploymentDirectory\\EmploymentDirectory.csproj",
-              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\FinalProject\\EmploymentDirectory\\server\\EmploymentDirectory\\EmploymentDirectory.csproj",
+              "ToolTip": "C:\\Users\\Eli\\Documents\\Rena\\Interview\\Employment-Directory\\EmploymentDirectory\\Server\\EmploymentDirectory\\EmploymentDirectory.csproj",
               "RelativeToolTip": "EmploymentDirectory\\EmploymentDirectory.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-07T12:50:53.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T12:50:53.85Z"
             }
           ]
         }

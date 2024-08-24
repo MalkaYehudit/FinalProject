@@ -84,8 +84,13 @@ const LoginPage = () => {
             const response = await axios.get(`http://localhost:5111/api/BussinesDetailsForBussinesOwners/GetBussinesDetailsForBussinesOwnerByPassword?password=${encodeURIComponent(password)}`);
 
             if (response.status === 200) {
-                // Redirect to profile page and pass user details via state
-                navigate('/UpdateBusinessDetails', { state: { userDetails: response.data } });
+                const userDetails = {
+                    ...response.data,
+                    Id: response.data.Id,
+                    City: response.data.city,
+                    Profession: response.data.profession,
+                };
+                navigate('/UpdateBusinessDetails', { state: { userDetails } });
             } else {
                 throw new Error('Login failed');
             }
@@ -98,7 +103,7 @@ const LoginPage = () => {
         <div>
             <form onSubmit={handleSubmit}>
                 <input
-                    type="password"
+                    // type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
